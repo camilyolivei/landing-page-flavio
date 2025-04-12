@@ -1,0 +1,112 @@
+.nosso-time {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.lista-time {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 7rem;
+  gap: 2rem;
+}
+
+.item-time {
+  height: 500px;
+  position: relative;
+}
+
+/* Fundo vermelho individual */
+.fundo-item-time {
+  position: absolute;
+  bottom: 4rem;
+  left: 0rem;
+  width: 114px;
+  height: 120px;
+  z-index: 2;
+}
+#imagem-membro-diana {
+  bottom: 5rem;
+  left: 1.5rem;
+}
+#imagem-membro-tim {
+  bottom: 3rem;
+  left: 0.9rem;
+}
+#imagem-membro-tania {
+  bottom: 3.8rem;
+  left: 0.9rem;
+}
+/* Estilo dos cards dos membros */
+.card-membro {
+  position: relative;
+  width: 270px;
+  height: 380px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.imagem-membro img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 97%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.conteudo-membro {
+  position: relative;
+  z-index: 1;
+  color: #000;
+  background: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0rem 1rem;
+  margin-top: -3rem;
+}
+
+.nome-membro {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.cargo-membro strong {
+  font-weight: bold;
+}
+
+.descricao-cargo {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+@media (max-width: 1189px) {
+  .fundo-item-time {
+    display: none;
+  }
+  .lista-time {
+    grid-template-columns: 1fr 1fr;
+  }
+  .conteudo-membro {
+    margin-top: 0rem;
+  }
+}
+@media (max-width: 790px) {
+  .lista-time {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,65 @@
+.footer {
+    background-color: #F4B618;
+    padding: 8rem 20px 0 20px;
+    font-family: Arial, sans-serif;
+    color: black;
+  }
+  
+  .conteudo-footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 50px;
+  }
+  
+  .footer .coluna {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer .coluna h3 {
+    margin-bottom: 10px;
+  }
+  
+  .footer a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .logo {
+    width: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .copy {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  .redes-icones {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+  }
+  .redes a{
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+  }
+  
+  @media (max-width: 600px) {
+    .conteudo-footer {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  }
+  

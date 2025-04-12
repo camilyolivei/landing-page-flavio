@@ -1,0 +1,136 @@
+/* Seção "Introdução" com layout em grid, alinhamento e controle de overflow */
+.introducao{
+    width: 75%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-family: "Space Grotesk", sans-serif;
+    position: relative;
+    overflow-y: hidden;
+}
+
+/* Imagem de fundo com opacidade ajustada e posição absoluta */
+.introducao-imagem-fundo{
+    position: absolute;
+    bottom: -15rem;
+    opacity: 0.40;
+    z-index: -1;
+    height: auto;
+}
+
+/* Conteúdo da introdução com espaçamento flexível */
+.introducao .introducao-conteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Estilização do título dentro da introdução */
+.introducao .introducao-conteudo .introducao-titulo{
+    font-size: 55px;
+    font-weight: 500;
+}
+
+/* Imagem mobile oculta por padrão */
+.introducao-imagem-mobile{
+    display: none;
+}
+
+/* Botão de contato com fundo preto e ajuste de padding */
+.introducao-botao-contato{
+    background-color: black;
+    width: fit-content;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+/* Destaques da introdução com layout flexível */
+.introducao-destaque{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+/* Listagem dentro dos destaques, escondendo overflow vertical */
+.introducao-destaque li{
+    overflow-y: hidden;
+}
+
+/* Layout flexível para figuras dentro dos destaques */
+.introducao-destaque li figure{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Estilização das legendas dentro das figuras */
+.introducao-destaque li figcaption{
+    line-height: 1.2em;
+    font-size: 14px;
+}
+
+/* Ajuste da largura da imagem dentro da introdução */
+.introducao .introducao-imagem img{
+    width: 100%;
+}
+
+/* Definição do tamanho das imagens dentro dos destaques */
+.introducao-destaque li img{
+    width: 40px;
+    height: 40px;
+}
+
+/* Ajuste do tamanho do título para telas entre 730px e 910px */
+@media (min-width: 730px) and (max-width: 910px) {
+    .introducao .introducao-conteudo .introducao-titulo {
+        font-size: 35px;
+    }
+}
+
+/* Ajustes para telas entre 500px e 730px */
+@media (min-width: 500px) and (max-width: 730px) {
+    .introducao{
+        grid-template-columns: 1fr;
+    }
+    .introducao .introducao-conteudo .introducao-titulo {
+        font-size: 40px;
+    }
+    .introducao-imagem-mobile {
+        display: block;
+        width: 100%;
+        height: 400px;
+    }
+    .introducao-imagem-fundo,
+    .introducao-imagem {
+        display: none;
+    }
+}
+
+/* Ajustes para telas menores que 500px */
+@media (max-width: 500px) {
+    .introducao {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    .introducao .introducao-conteudo{
+        width: 90%;
+    }
+    .introducao .introducao-conteudo .introducao-titulo{
+        font-size: 35px;
+    }
+    .introducao-imagem-mobile{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .introducao-imagem-fundo,.introducao-imagem{
+        display: none;
+    }
+    .introducao-destaque{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

@@ -1,0 +1,72 @@
+/* Seção "Nosso Diferencial" com espaçamento superior, largura ajustada e layout flexível */
+.nosso-diferencial {
+  padding-top: 10rem;
+  width: 75%;
+  font-family: "Space Grotesk", sans-serif;
+  gap: 2rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Conteúdo interno com largura reduzida e layout flexível em coluna */
+.nosso-diferencial-conteudo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Estilização do título com tamanho e peso definidos */
+.nosso-diferencial-titulo {
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-align: start;
+}
+
+/* Estilização do texto para melhorar a legibilidade */
+.nosso-diferencial-texto {
+  line-height: 1.7;
+}
+
+/* Lista de itens do diferencial com layout de grade */
+.nosso-diferencial-lista {
+  display: grid;
+  grid-template-columns: 227px 227px 227px 227px;
+  gap: 4rem;
+}
+
+/* Oculta a barra de rolagem no WebKit (Chrome, Safari) */
+.nosso-diferencial-lista::-webkit-scrollbar {
+  display: none;
+}
+
+/* Estilização dos itens dentro da lista */
+.nosso-diferencial-lista .nosso-diferencial-item {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilização das imagens dentro dos itens da lista */
+.nosso-diferencial-lista .nosso-diferencial-item img {
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  display: block;
+  height: 301px;
+  width: 220px;
+  overflow: hidden;
+}
+
+/* Responsividade para telas menores (largura máxima de 1050px) */
+@media (max-width: 1050px) {
+  .nosso-diferencial-conteudo {
+    width: 100%;
+  }
+  .nosso-diferencial-lista {
+    overflow-x: scroll; /* Permite rolagem horizontal */
+  }
+}

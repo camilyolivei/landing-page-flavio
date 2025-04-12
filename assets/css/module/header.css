@@ -1,0 +1,21 @@
+/* Cabeçalho principal com layout flexível e espaçamento ajustado */
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    padding: 3rem 0;
+    margin: auto;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+/* Menu de navegação com itens dispostos em linha e espaçamento entre eles */
+.menu{
+    display: flex;
+    gap: 2rem;
+}
+
+/* Estilização dos links dentro dos itens do menu */
+.menu .menu-item a{
+    color: rgb(0, 0, 0);
+}

@@ -1,0 +1,21 @@
+@import 'module/header.css';
+@import 'module/introducao.css';
+@import 'module/nosso-diferencial.css';
+@import 'module/contato.css';
+@import 'module/rodape.css';
+@import 'module/nossotime.css';
+@import 'module/background.css';
+
+
+/*Css global*/
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+/* font-family: "Space Grotesk", sans-serif;*/
