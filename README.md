@@ -6,7 +6,7 @@ O CineMagic Studios é uma produtora de conteúdo cinematográfico especializada
 
 ## Sobre este Projeto (Site Institucional)
 
-![Telas](https://a.imagem.app/Bz4PXE.png)
+![Telas](https://a.imagem.app/BzPnGy.png)
 
 Este repositório contém o código fonte do site institucional do CineMagic Studios. O site tem como objetivo apresentar a empresa, seus serviços e seu portfólio de projetos inovadores em realidade aumentada e experiências imersivas.
 
