@@ -1,112 +1,162 @@
+/* ========== SEÇÃO "NOSSO TIME" ========== */
+
+/* Estilo geral da seção */
 .nosso-time {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  margin: auto;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-  font-family: "Space Grotesk", sans-serif;
+  display: flex; /* Usando flexbox para organizar os itens de forma vertical */
+  flex-direction: column; /* Colocando os itens em coluna */
+  width: 75%; /* Definindo a largura da seção como 75% da tela */
+  margin: auto; /* Centralizando a seção */
+  gap: 2rem; /* Espaçamento entre os itens */
+  justify-content: center; /* Alinhando os itens verticalmente no centro */
+  font-family: var(--fonte-space-grotesk); /* Definindo a fonte */
 }
 
+/* Título da seção "Nosso Time" */
+.titulo-time {
+  font-size: 2.5rem; /* Tamanho da fonte do título */
+  margin-bottom: 1rem; /* Espaçamento abaixo do título */
+}
+
+/* Estilo da lista que contém os membros */
 .lista-time {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 7rem;
-  gap: 2rem;
+  display: grid; /* Usando grid para distribuir os membros em colunas */
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais para exibir os membros */
+  gap: 2rem; /* Espaçamento entre os itens */
 }
 
+/* Estilo de cada item da lista, ou seja, cada membro */
 .item-time {
-  height: 500px;
-  position: relative;
+  position: relative; /* Necessário para posicionar a imagem de fundo */
+  height: 500px; /* Definindo uma altura fixa para cada item */
 }
 
-/* Fundo vermelho individual */
+/* Imagem decorativa de fundo do item */
 .fundo-item-time {
-  position: absolute;
-  bottom: 4rem;
-  left: 0rem;
-  width: 114px;
-  height: 120px;
-  z-index: 2;
+  position: absolute; /* Posicionando a imagem em relação ao item */
+  bottom: 4rem; /* Distância do fundo do item */
+  left: 0; /* Alinhando à esquerda */
+  width: 114px; /* Largura da imagem */
+  height: 120px; /* Altura da imagem */
+  z-index: 2; /* Colocando a imagem acima dos outros elementos */
 }
+
+/* Posicionando as imagens de fundo de forma personalizada para cada membro */
 #imagem-membro-diana {
   bottom: 5rem;
   left: 1.5rem;
 }
+
 #imagem-membro-tim {
   bottom: 3rem;
   left: 0.9rem;
 }
+
 #imagem-membro-tania {
   bottom: 3.8rem;
   left: 0.9rem;
 }
+
 /* Estilo dos cards dos membros */
 .card-membro {
-  position: relative;
-  width: 270px;
-  height: 380px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 1rem;
-  margin: 0 auto;
+  position: relative; /* Necessário para o posicionamento dos conteúdos sobre a imagem */
+  width: 270px; /* Largura do card */
+  height: 380px; /* Altura do card */
+  overflow: hidden; /* Garantindo que nada saia do limite do card */
+  display: flex; /* Usando flexbox para organizar o conteúdo dentro do card */
+  flex-direction: column; /* Colocando os itens dentro do card em coluna */
+  justify-content: center; /* Centralizando o conteúdo dentro do card */
+  padding: 1rem; /* Espaçamento interno */
+  margin: 0 auto; /* Centralizando o card */
+  background-color: #fff; /* Cor de fundo branca */
+  border-radius: 10px; /* Bordas arredondadas */
 }
 
+/* Estilo da imagem do membro dentro do card */
 .imagem-membro img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 97%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
-  background-color: #fff;
-  border-radius: 10px;
+  position: absolute; /* Posicionando a imagem do membro sobre o fundo */
+  top: 0; /* Colocando a imagem no topo do card */
+  left: 0; /* Alinhando à esquerda */
+  width: 100%; /* Largura total do card */
+  height: 100%; /* Altura total do card */
+  object-fit: cover; /* Ajustando a imagem para cobrir o card sem distorção */
+  z-index: 0; /* Colocando a imagem abaixo do conteúdo */
 }
 
+/* Estilo do conteúdo do membro (nome, cargo, descrição) */
 .conteudo-membro {
-  position: relative;
-  z-index: 1;
-  color: #000;
-  background: none;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  padding: 0rem 1rem;
-  margin-top: -3rem;
+  position: relative; /* Mantendo o conteúdo sobre a imagem */
+  z-index: 1; /* Colocando o conteúdo sobre a imagem */
+  color: #000; /* Cor do texto */
+  text-align: center; /* Alinhando o texto ao centro */
+  display: flex; /* Usando flexbox para organizar os itens dentro do conteúdo */
+  flex-direction: column; /* Colocando os itens em coluna */
+  gap: 1rem; /* Espaçamento entre os itens */
+  padding: 0rem 1rem; /* Espaçamento interno */
+  margin-top: -3rem; /* Ajustando a posição do conteúdo para ficar sobre a imagem */
 }
 
+/* Estilo do nome do membro */
 .nome-membro {
-  font-size: 1.3rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
+  font-size: 1.3rem; /* Tamanho da fonte */
+  font-weight: bold; /* Deixando o nome em negrito */
+  margin-bottom: 0.5rem; /* Espaçamento abaixo do nome */
 }
 
+/* Estilo do cargo do membro, deixando em negrito */
 .cargo-membro strong {
-  font-weight: bold;
+  font-weight: bold; /* Tornando o cargo em negrito */
 }
 
+/* Estilo da descrição do cargo */
 .descricao-cargo {
-  font-size: 0.9rem;
-  line-height: 1.4;
+  font-size: 0.9rem; /* Tamanho da fonte */
+  line-height: 1.4; /* Ajustando o espaçamento entre as linhas */
 }
+
+/* ========== RESPONSIVIDADE ========== */
+
+/* Responsividade para telas com largura até 1189px */
 @media (max-width: 1189px) {
+  /* Escondendo as imagens de fundo decorativas */
   .fundo-item-time {
     display: none;
   }
+  /* Ajustando a lista para 2 colunas */
   .lista-time {
     grid-template-columns: 1fr 1fr;
   }
+  /* Removendo o espaço superior do conteúdo no card */
   .conteudo-membro {
-    margin-top: 0rem;
+    margin-top: 0;
   }
 }
+
+/* Responsividade para telas com largura até 790px */
 @media (max-width: 790px) {
+  /* Ajustando a lista para 1 coluna */
   .lista-time {
     grid-template-columns: 1fr;
+  }
+  /* Ajustando a largura do card */
+  .card-membro {
+    width: 270px;
+  }
+}
+
+/* Responsividade para telas com largura até 400px */
+@media (max-width: 400px) {
+  /* Ajustando a largura máxima da seção */
+  .nosso-time {
+    width: 90%; /* Seção ocupa 90% da largura */
+  }
+  /* Ajustando a largura do card */
+  .card-membro {
+    width: 100%; /* Card ocupa toda a largura disponível */
+    max-width: 240px; /* Largura máxima de 240px */
+  }
+  /* Ajustando a imagem dentro do card */
+  .imagem-membro img {
+    object-position: center; /* Centralizando a imagem */
+    object-fit: initial; /* Ajustando a imagem para seu tamanho original */
   }
 }

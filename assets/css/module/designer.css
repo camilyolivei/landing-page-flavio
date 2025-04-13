@@ -1,0 +1,60 @@
+/* ========== SEÇÃO "DESIGNER" ========== */
+
+/* Estilização da seção principal */
+.designer {
+    font-family: "Space Grotesk", sans-serif; /* Fonte personalizada */
+    display: flex; /* Ativa o flexbox */
+    flex-direction: column; /* Coloca os elementos em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    text-align: center; /* Centraliza o texto */
+    gap: 20px; /* Espaço entre título e imagem */
+  }
+  
+  /* Estilização do título principal */
+  .designer-conteudo h1 {
+    padding: 5rem 0; /* Espaçamento interno acima e abaixo do título */
+    font-size: 50px; /* Tamanho da fonte */
+    color: #000; /* Cor do texto */
+    line-height: 1.2; /* Espaçamento entre linhas */
+    width: 100%; /* Ocupa toda a largura disponível */
+    overflow: hidden; /* Evita transbordamento */
+    display: block; /* Garante que o elemento se comporte como bloco */
+    margin-top: 0; /* Remove margem superior */
+    margin-bottom: 20rem; /* Espaço para a imagem abaixo */
+    position: static; /* Usa o posicionamento padrão */
+  }
+  
+  /* Estilização da imagem criativa */
+  .designer img {
+    position: absolute; /* Posiciona a imagem fora do fluxo normal */
+    width: 800px; /* Largura fixa */
+    z-index: 4; /* Sobrepõe acima de outros elementos */
+    margin-top: 20rem; /* Posiciona a imagem mais abaixo */
+  }
+  
+  /* ========== RESPONSIVIDADE PARA TELAS MENORES ========== */
+  @media (max-width: 650px) {
+    
+    /* Ajustes na seção principal */
+    .designer {
+      width: 90%; /* Reduz largura para caber em telas pequenas */
+      margin: auto; /* Centraliza horizontalmente */
+      padding-bottom: 100px; /* Espaço inferior para evitar corte */
+      margin-bottom: -100px; /* Compensa espaço da imagem sobreposta */
+      gap: 10px; /* Reduz o espaço entre elementos */
+    }
+  
+    /* Ajustes no título */
+    .designer-conteudo h1 {
+      font-size: 30px; /* Reduz o tamanho da fonte */
+      margin-bottom: 10px; /* Reduz o espaço inferior */
+    }
+  
+    /* Ajustes na imagem */
+    .designer img {
+      width: 80%; /* Reduz a largura da imagem */
+      margin-bottom: -5rem; /* Ajusta o posicionamento vertical */
+    }
+  }
+  

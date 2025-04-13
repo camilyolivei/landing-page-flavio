@@ -1,10 +1,12 @@
 @import 'module/header.css';
 @import 'module/introducao.css';
-@import 'module/nosso-diferencial.css';
+@import 'module/nosso-diferenciais.css';
 @import 'module/contato.css';
 @import 'module/rodape.css';
 @import 'module/nossotime.css';
-@import 'module/background.css';
+@import 'module/designer.css';
+@import 'module/nossamissao.css';
+@import 'module/experiencia.css';
 
 
 /*Css global*/
@@ -18,4 +20,13 @@ a{
     text-decoration: none;
     color: white;
 }
-/* font-family: "Space Grotesk", sans-serif;*/
+
+:root {
+    --cor-branco: white;
+    --cor-preto: black;
+    --cor-amarelo:#FFBF23;
+    --cor-rosa: #FFD7EF;
+
+    --fonte-roboto:"Roboto", sans-serif;
+    --fonte-space-grotesk:"Space Grotesk", sans-serif;
+  }

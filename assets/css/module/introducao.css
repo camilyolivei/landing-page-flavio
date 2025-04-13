@@ -1,135 +1,162 @@
-/* Seção "Introdução" com layout em grid, alinhamento e controle de overflow */
-.introducao{
+/* ========== SEÇÃO INTRODUÇÃO ========== */
+.introducao {
+    /* Largura centralizada e layout em duas colunas */
     width: 75%;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    font-family: "Space Grotesk", sans-serif;
+    font-family: var(--fonte-space-grotesk);
     position: relative;
     overflow-y: hidden;
+    padding: 10rem 0 3rem 0;
 }
 
-/* Imagem de fundo com opacidade ajustada e posição absoluta */
-.introducao-imagem-fundo{
+/* ========== IMAGEM DE FUNDO DECORATIVA ========== */
+.introducao-imagem-fundo {
     position: absolute;
     bottom: -15rem;
-    opacity: 0.40;
+    opacity: 0.4;
     z-index: -1;
     height: auto;
 }
 
-/* Conteúdo da introdução com espaçamento flexível */
-.introducao .introducao-conteudo{
+/* ========== CONTEÚDO PRINCIPAL ========== */
+.introducao .introducao-conteudo {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
-/* Estilização do título dentro da introdução */
-.introducao .introducao-conteudo .introducao-titulo{
+/* Título principal da seção */
+.introducao .introducao-conteudo .introducao-titulo {
     font-size: 55px;
     font-weight: 500;
-}
-
-/* Imagem mobile oculta por padrão */
-.introducao-imagem-mobile{
-    display: none;
-}
-
-/* Botão de contato com fundo preto e ajuste de padding */
-.introducao-botao-contato{
-    background-color: black;
-    width: fit-content;
-    padding: 0.5rem;
-    border-radius: 4px;
-}
-
-/* Destaques da introdução com layout flexível */
-.introducao-destaque{
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-}
-
-/* Listagem dentro dos destaques, escondendo overflow vertical */
-.introducao-destaque li{
+    line-height: 1.2;
     overflow-y: hidden;
 }
 
-/* Layout flexível para figuras dentro dos destaques */
-.introducao-destaque li figure{
+/* ========== IMAGEM ILUSTRATIVA PARA MOBILE ========== */
+.introducao-imagem-mobile {
+    display: none; /* Mostrada apenas em telas menores */
+}
+
+/* ========== BOTÃO DE CONTATO ========== */
+.introducao-botao-contato {
+    background-color: black;
+    color: var(--cor-branco);
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.introducao-botao-contato:hover,
+.introducao-botao-contato:focus {
+    background-color: #222;
+    outline: none;
+}
+
+/* ========== LISTA DE DESTAQUES ========== */
+.introducao-destaque {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+/* Cada item da lista */
+.introducao-destaque li {
+    overflow-y: hidden;
+}
+
+/* Conteúdo visual de cada destaque (imagem + legenda) */
+.introducao-destaque li figure {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
-/* Estilização das legendas dentro das figuras */
-.introducao-destaque li figcaption{
+/* Texto abaixo da imagem */
+.introducao-destaque li figcaption {
     line-height: 1.2em;
     font-size: 14px;
 }
 
-/* Ajuste da largura da imagem dentro da introdução */
-.introducao .introducao-imagem img{
-    width: 100%;
-}
-
-/* Definição do tamanho das imagens dentro dos destaques */
-.introducao-destaque li img{
+/* Tamanho padrão dos ícones nos destaques */
+.introducao-destaque li img {
     width: 40px;
     height: 40px;
 }
 
-/* Ajuste do tamanho do título para telas entre 730px e 910px */
+/* ========== IMAGEM ILUSTRATIVA PARA DESKTOP ========== */
+.introducao .introducao-imagem img {
+    width: 100%;
+    height: auto;
+}
+
+/* ========== MEDIA QUERIES (RESPONSIVIDADE) ========== */
+
+/* Telas médias: reduz tamanho do título */
 @media (min-width: 730px) and (max-width: 910px) {
     .introducao .introducao-conteudo .introducao-titulo {
         font-size: 35px;
     }
 }
 
-/* Ajustes para telas entre 500px e 730px */
+/* Telas de 500px a 730px: colapsa para 1 coluna */
 @media (min-width: 500px) and (max-width: 730px) {
-    .introducao{
+    .introducao {
         grid-template-columns: 1fr;
+        padding: 2rem 0;
     }
+
     .introducao .introducao-conteudo .introducao-titulo {
         font-size: 40px;
     }
+
     .introducao-imagem-mobile {
         display: block;
         width: 100%;
-        height: 400px;
+        height: auto;
     }
+
     .introducao-imagem-fundo,
     .introducao-imagem {
         display: none;
     }
 }
 
-/* Ajustes para telas menores que 500px */
+/* Telas pequenas */
 @media (max-width: 500px) {
     .introducao {
         display: flex;
         flex-direction: column;
         width: 90%;
+        padding: 2rem 0;
     }
-    .introducao .introducao-conteudo{
-        width: 90%;
+
+    .introducao .introducao-conteudo {
+        width: 100%;
     }
-    .introducao .introducao-conteudo .introducao-titulo{
+
+    .introducao .introducao-conteudo .introducao-titulo {
         font-size: 35px;
     }
-    .introducao-imagem-mobile{
+
+    .introducao-imagem-mobile {
         display: block;
         width: 100%;
-        height: 100%;
+        height: auto;
     }
-    .introducao-imagem-fundo,.introducao-imagem{
+
+    .introducao-imagem-fundo,
+    .introducao-imagem {
         display: none;
     }
-    .introducao-destaque{
-        display: flex;
+
+    .introducao-destaque {
         flex-direction: column;
         align-items: flex-start;
     }

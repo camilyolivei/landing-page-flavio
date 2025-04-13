@@ -1,21 +1,114 @@
-/* Cabeçalho principal com layout flexível e espaçamento ajustado */
-.cabecalho{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 75%;
-    padding: 3rem 0;
-    margin: auto;
-    font-family: "Space Grotesk", sans-serif;
+/* =======================================
+   CABEÇALHO PRINCIPAL (HEADER)
+======================================= */
+
+/* Cabeçalho principal fixo no topo, largura total da viewport */
+.main_cabecalho {
+    background-color: var(--cor-branco);
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
 }
 
-/* Menu de navegação com itens dispostos em linha e espaçamento entre eles */
-.menu{
+/* Container do conteúdo do cabeçalho centralizado e espaçado */
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+    font-family: var(--fonte-space-grotesk);
+}
+
+/* =======================================
+   LOGO DA CINE MAGIC
+======================================= */
+
+/* Imagem do logotipo */
+.imagem-logo-cinemagic {
+    width: 150px;
+    height: auto;
+}
+
+/* =======================================
+   NAVEGAÇÃO PRINCIPAL
+======================================= */
+
+/* Lista de links de navegação em linha */
+.menu {
     display: flex;
     gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap; /* melhora responsividade mesmo fora do media query */
 }
 
-/* Estilização dos links dentro dos itens do menu */
-.menu .menu-item a{
+/* Links do menu */
+.menu .menu-item a {
     color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
 }
+
+/* Acessibilidade visual ao focar com teclado */
+.menu .menu-item a:focus-visible {
+    outline: 2px solid var(--cor-destaque, #0055ff);
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+
+/* =======================================
+   RESPONSIVIDADE
+======================================= */
+
+/* Ajustes para tablets e telas médias */
+@media (max-width: 1050px) {
+    .main_cabecalho {
+        position: static; /* Remove fixação para evitar sobreposição */
+    }
+
+    .cabecalho {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        text-align: center;
+    }
+
+    .imagem-logo-cinemagic {
+        width: 130px;
+    }
+
+    .menu {
+        justify-content: center;
+        gap: 1.5rem;
+    }
+}
+
+/* Ajustes para telas pequenas (mobile) */
+@media (max-width: 780px) {
+    .cabecalho {
+        flex-direction: column;
+        width: 90%;
+        gap: 1rem;
+    }
+
+    .imagem-logo-cinemagic {
+        width: 120px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .menu .menu-item a {
+        font-size: 1rem;
+    }
+}
+

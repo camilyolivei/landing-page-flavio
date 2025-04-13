@@ -8,33 +8,57 @@
     <!--Css-->
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <!--Importando font-->
+    <!-- Importação de fontes do Google Fonts -->
+
+    <!-- Fonte "Space Grotesk" com pesos de 300 a 700 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- Fonte "Roboto" com variações de peso de 100 a 900 e estilos itálicos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header class="cabecalho">
-        <div class="logo">
-            Logo
+    <!-- Cabeçalho principal do site -->
+    <header class="main_cabecalho" aria-label="Cabeçalho principal do site">
+
+        <!-- Container do conteúdo do cabeçalho -->
+        <div class="cabecalho">
+
+            <!-- Logotipo com link para o início da página -->
+            <div class="cabecalho-logo">
+                <a href="#inicio" aria-label="Ir para o início da página">
+                    <img src="svgviewer-output (17).svg" alt="Logotipo da CineMagic Studios com um óculos de realidade virtual acima de um livro aberto, representando tecnologia e narrativa imersiva" class="imagem-logo-cinemagic">
+                </a>
+            </div>
+
+            <!-- Navegação principal do site -->
+            <nav aria-label="Navegação principal">
+                <ul class="menu">
+                    <!-- Links de navegação para seções internas da página -->
+                    <li class="menu-item"><a href="#nossa-missao">Missão</a></li>
+                    <li class="menu-item"><a href="#nosso-diferenciais">Diferenciais</a></li>
+                    <li class="menu-item"><a href="#experiencia">Experiência</a></li>
+                    <li class="menu-item"><a href="#time">Time</a></li>
+                    <li class="menu-item"><a href="#contato">Contato</a></li>
+                    <li class="menu-item"><a href="#redes">Redes Sociais</a></li>
+                </ul>
+            </nav>
+
         </div>
-        <nav>
-            <ul class="menu">
-                <li class="menu-item"><a href="">Inicio</a></li>
-                <li class="menu-item"><a href="">Depoimentos</a></li>
-                <li class="menu-item"><a href="">Conato</a></li>
-                <li class="menu-item"><a href="">Canto</a></li>
-            </ul>
-        </nav>
     </header>
+
     <main>
         <!-- Seção de introdução do site -->
-        <section class="introducao">
+        <section class="introducao" id="introducao" aria-label="Introdução da CineMagic Studios">
 
-            <!--Imagem de fundo para a introdução-->
+            <!-- Imagem de fundo decorativa da introdução -->
             <div class="introducao-imagem-fundo">
-                <img src="assets/img/img-introducao/imagem-fundo.avif" alt="Essa imagem e um fundo , um circulo cortado no meio" aria-hidden="true">
+                <!-- Imagem decorativa, sem valor informativo para leitores de tela -->
+                <img src="assets/img/img-introducao/imagem-fundo.avif" alt="Imagem decorativa de fundo, composta por um círculo cortado ao meio em tons neutros" aria-hidden="true">
             </div>
 
             <!-- Conteúdo textual e interativo da introdução -->
@@ -45,103 +69,164 @@
                     Experiências Imersivas e Histórias Interativas
                 </h1>
 
-                <img class="introducao-imagem-mobile" src="assets/img/img-introducao/imagem-ilustrativa-1.svg" alt="">
+                <!-- Imagem ilustrativa exibida apenas em dispositivos móveis -->
+                <img class="introducao-imagem-mobile" src="assets/img/img-introducao/imagem-ilustrativa-1.svg" alt="Ilustração vetorial de uma pessoa usando óculos de realidade virtual, com gráficos ao fundo representando inovação">
 
-                <!-- Parágrafo explicativo sobre a empresa -->
-                <p class="introducao-texto">CineMagic Studios é uma produtora de conteúdo cinematográfico especializada em realidade aumentada e experiências imersivas. Criamos histórias interativas para empresas, eventos e educação, oferecendo uma nova dimensão de entretenimento e aprendizado.</p>
+                <!-- Parágrafo introdutório explicando o foco da empresa -->
+                <p class="introducao-texto">
+                    CineMagic Studios é uma produtora de conteúdo cinematográfico especializada em realidade aumentada e experiências imersivas. Criamos histórias interativas para empresas, eventos e educação, oferecendo uma nova dimensão de entretenimento e aprendizado.
+                </p>
 
-                <!-- Link de contato estilizado como botão -->
-                <a href="#" class="introducao-botao-contato" aria-label="Entre em contato com a CineMagic Studios">
+                <!-- Link levando à seção de contato -->
+                <a href="#contato" class="introducao-botao-contato" aria-label="Entre em contato com a equipe da CineMagic Studios através da seção de contato">
                     Entrar em contato
                 </a>
 
-                <!-- Lista de destaques dos serviços -->
+                <!-- Lista de destaques dos serviços oferecidos -->
                 <ul class="introducao-destaque" aria-label="Destaques dos serviços oferecidos pela CineMagic Studios">
+
+                    <!-- Item: Imersão Total -->
                     <li>
                         <figure>
-                            <img src="assets/img/img-introducao/imagem-cadeado.svg" alt="Ícone de um cadeado com um raio no meio, representando segurança e imersão">
+                            <img src="assets/img/img-introducao/imagem-cadeado.svg" alt="Ícone representando um cadeado com um raio, simbolizando segurança e profundidade imersiva">
                             <figcaption>Imersão Total</figcaption>
                         </figure>
                     </li>
+
+                    <!-- Item: Criatividade sem Limites -->
                     <li>
                         <figure>
-                            <img src="assets/img/img-introducao/imagem-imaginacao.svg" alt="Imagem abstrata simbolizando imaginação e inovação - um quadrado no meio e quatro triângulos ao redor">
+                            <img src="assets/img/img-introducao/imagem-imaginacao.svg" alt="Imagem geométrica representando imaginação — um quadrado central rodeado por quatro triângulos">
                             <figcaption>Criatividade sem Limites</figcaption>
                         </figure>
                     </li>
+
+                    <!-- Item: Experiências Memoráveis -->
                     <li>
                         <figure>
-                            <img src="assets/img/img-introducao/imagem-experiencia-memoraveis.svg" alt="Imagem abstrata representando experiências memoráveis - dois quadrados intercalados">
+                            <img src="assets/img/img-introducao/imagem-experiencia-memoraveis.svg" alt="Dois quadrados sobrepostos representando camadas de experiências e recordações">
                             <figcaption>Experiências Memoráveis</figcaption>
                         </figure>
                     </li>
+
                 </ul>
             </div>
 
-            <!-- Imagem decorativa ou ilustrativa da introdução -->
+            <!-- Ilustração complementar (aparece em telas maiores) -->
             <div class="introducao-imagem">
-                <img src="assets/img/img-introducao/imagem-ilustrativa-1.svg" alt="Ilustração relacionada ao conteúdo da CineMagic Studios">
+                <img src="assets/img/img-introducao/imagem-ilustrativa-1.svg" alt="Ilustração artística de uma pessoa utilizando óculos de realidade virtual, com elementos gráficos de conexão e interação ao fundo">
             </div>
         </section>
 
+        <!--=========================================================================================================-->
 
-        <!-- Seção "Nosso Diferencial" -->
-        <section class="nosso-diferencial">
-            <div class="nosso-diferencial-conteudo">
+        <!-- Seção "Nossa Missão" -->
+        <section class="nossa-missao" id="nossa-missao">
+            <!-- Container da missão com agrupamento semântico -->
+            <div>
+                <!-- Título da seção  -->
+                <h2 id="titulo-nossa-missao">Nossa Missão</h2>
+
+                <!-- Parágrafo descritivo da missão -->
+                <p>
+                    Somos apaixonados por contar histórias de forma inovadora e envolvente. Acreditamos no poder da realidade aumentada para transformar a maneira como as pessoas interagem com o conteúdo cinematográfico.
+                </p>
+            </div>
+        </section>
+
+        <!--=========================================================================================================-->
+
+        <!-- Seção "Nosso diferenciais" -->
+        <section class="nosso-diferenciais" id="nosso-diferenciais" aria-labelledby="titulo-diferenciais">
+            <div class="nosso-diferenciais-conteudo">
                 <!-- Título da seção -->
-                <h1 class="nosso-diferencial-titulo">Nosso Diferencial</h1>
+                <h1 class="nosso-diferenciais-titulo">Nosso diferenciais</h1>
 
                 <!-- Parágrafo explicativo sobre a abordagem da empresa -->
-                <p class="nosso-diferencial-texto">
+                <p class="nosso-diferenciais-texto">
                     Nossa abordagem inovadora e criativa nos permite oferecer experiências cinematográficas únicas, criando um impacto duradouro nos espectadores.
                 </p>
             </div>
 
             <!-- Lista de diferenciais da empresa -->
-            <ul class="nosso-diferencial-lista" aria-label="Diferenciais da CineMagic Studios">
+            <ul class="nosso-diferenciais-lista" aria-label="Diferenciais da CineMagic Studios">
                 <!-- Item 1: Experiência e Qualidade -->
-                <li class="nosso-diferencial-item">
-                    <img src="assets/img/img-diferencial/imagem-1.avif" alt="Imagem ilustrativa de uma menina apontando o dedo para uma tela web">
+                <li class="nosso-diferenciais-item">
+                    <img src="assets/img/img-diferenciais/imagem-1.avif" alt="Imagem ilustrativa de uma menina apontando o dedo para uma tela web">
                     <h2>Experiência e Qualidade</h2>
                     <p>Nossa equipe é especializada em desenvolver workflows funcionais que garantem a entrega de projetos de alta qualidade, sempre superando as expectativas.</p>
                 </li>
 
                 <!-- Item 2: Personalização e Inovação -->
-                <li class="nosso-diferencial-item">
-                    <img src="assets/img/img-diferencial/imagem-2.avif" alt="Imagem ilustrativa de gráfico">
+                <li class="nosso-diferenciais-item">
+                    <img src="assets/img/img-diferenciais/imagem-2.avif" alt="Imagem ilustrativa de gráfico">
                     <h2>Personalização e Inovação</h2>
                     <p>Oferecemos soluções completas e personalizadas, utilizando as mais recentes tecnologias para garantir experiências cinematográficas inovadoras e impactantes.</p>
                 </li>
 
                 <!-- Item 3: Compromisso com a Excelência -->
-                <li class="nosso-diferencial-item">
-                    <img src="assets/img/img-diferencial/imagem-3.avif" alt="Imagem ilustrativa de uma menina comemorando, demonstrando a ideia de sucesso">
+                <li class="nosso-diferenciais-item">
+                    <img src="assets/img/img-diferenciais/imagem-3.avif" alt="Imagem ilustrativa de uma menina comemorando, demonstrando a ideia de sucesso">
                     <h2>Compromisso com a Excelência</h2>
                     <p>Nosso atendimento excepcional garante que cada projeto seja tratado com a máxima atenção e cuidado, resultando em experiências cinematográficas excepcionais.</p>
                 </li>
 
                 <!-- Item 4: Tecnologia de Ponta -->
-                <li class="nosso-diferencial-item">
-                    <img src="assets/img/img-diferencial/imagem-4.avif" alt="Imagem ilustrativa de uma máquina tecnológica, demonstrando a ideia de tecnologia">
+                <li class="nosso-diferenciais-item">
+                    <img src="assets/img/img-diferenciais/imagem-4.avif" alt="Imagem ilustrativa de uma máquina tecnológica, demonstrando a ideia de tecnologia">
                     <h2>Tecnologia de Ponta</h2>
                     <p>Nossas automações inteligentes permitem a criação de experiências cinematográficas interativas, proporcionando uma imersão única para o público.</p>
                 </li>
             </ul>
         </section>
-        <!-- Seção "Nosso Time" -->
-        <section class="nosso-time" aria-labelledby="titulo-time">
-            <h2 id="titulo-time" class="titulo-time">Nosso Time</h2>
 
+        <!--=========================================================================================================-->
+
+        <!-- Seção: Experiência do Espectador -->
+        <section class="experiencia" id="experiencia">
+
+            <!-- Agrupamento semântico do conteúdo textual -->
+            <article class="experiencia-conteudo">
+
+                <!-- Título principal da seção -->
+                <h2>Experiência do Espectador</h2>
+
+                <!-- Parágrafo explicativo sobre a experiência oferecida -->
+                <p>
+                    Cada projeto da CineMagic Studios é pensado para despertar algo único em quem assiste. Queremos que o espectador não apenas veja, mas sinta. Que mergulhe em novas realidades, questione o que é real e descubra histórias de um jeito totalmente novo.
+                    Aqui, a plateia não é só espectadora — é parte da experiência.
+                </p>
+
+            </article>
+
+        </section>
+
+        <!--=========================================================================================================-->
+
+        <!-- Seção "Nosso Time" -->
+        <section class="nosso-time" id="time">
+            <!-- Título da seção -->
+            <h2 class="titulo-time">Nosso Time</h2>
+
+            <!-- Lista dos membros do time -->
             <ul class="lista-time">
+                <!-- Membro: Diana Reis -->
                 <li class="item-time">
-                    <img src="svgviewer-output (14).svg" alt="" class="fundo-item-time" id="imagem-membro-diana">
+                    <!-- Imagem decorativa com fundo do item -->
+                    <img src="assets/img/img-nossotime/verdecomamarelo.svg" alt="Imagem decorativa de um ramo de folhas verdes e amarelo" class="fundo-item-time" id="imagem-membro-diana">
+
+                    <!-- Card do membro Diana -->
                     <article class="card-membro">
+                        <!-- Figura com a imagem de fundo decorativo do item -->
                         <figure class="imagem-membro">
-                            <img src="fundo-time.svg" alt="Foto de Diana Reis" >
+                            <img src="assets/img/img-nossotime/fundo-time.svg" alt="Fundo ilustrativo decorativo do item">
                         </figure>
                         <div class="conteudo-membro">
+                            <!-- Nome do membro -->
                             <h3 class="nome-membro">Diana Reis</h3>
+                            <!-- Cargo do membro, destacado em negrito -->
                             <p class="cargo-membro"><strong>Diretora de Criação</strong></p>
+                            <!-- Descrição do cargo de Diana -->
                             <p class="descricao-cargo">
                                 Responsável por liderar a criação de conceitos visuais e narrativas inovadoras, garantindo que cada projeto transmita emoção, impacto e a essência da CineMagic Studios em experiências imersivas.
                             </p>
@@ -149,15 +234,23 @@
                     </article>
                 </li>
 
+                <!-- Membro: Tim Santos -->
                 <li class="item-time">
-                    <img src="svgviewer-output (15).svg" alt="" class="fundo-item-time" id="imagem-membro-tim">
+                    <!-- Imagem decorativa com fundo do item -->
+                    <img src="assets/img/img-nossotime/ramodefolhas.svg" alt="Imagem decorativa de ramo de folhas verdes" class="fundo-item-time" id="imagem-membro-tim">
+
+                    <!-- Card do membro Tim -->
                     <article class="card-membro">
+                        <!-- Figura com a imagem de fundo decorativo do item -->
                         <figure class="imagem-membro">
-                            <img src="fundo-time.svg" alt="Foto de Tim Santos"  >
+                            <img src="assets/img/img-nossotime/fundo-time.svg" alt="Fundo ilustrativo decorativo do item">
                         </figure>
                         <div class="conteudo-membro">
+                            <!-- Nome do membro -->
                             <h3 class="nome-membro">Tim Santos</h3>
+                            <!-- Cargo do membro, destacado em negrito -->
                             <p class="cargo-membro"><strong>Especialista em Realidade Aumentada</strong></p>
+                            <!-- Descrição do cargo de Tim -->
                             <p class="descricao-cargo">
                                 Atua no desenvolvimento de experiências em realidade aumentada, criando interações digitais que conectam o público ao conteúdo de forma criativa, dinâmica e tecnológica.
                             </p>
@@ -165,15 +258,23 @@
                     </article>
                 </li>
 
+                <!-- Membro: Tânia Neves -->
                 <li class="item-time">
-                    <img src="folha-amarela.svg" alt="" class="fundo-item-time"  id="imagem-membro-tania">
+                    <!-- Imagem decorativa com fundo do item -->
+                    <img src="assets/img/img-nossotime/folha-amarela.svg" alt="Imagem decorativa de folha amarela" class="fundo-item-time" id="imagem-membro-tania">
+
+                    <!-- Card do membro Tânia -->
                     <article class="card-membro">
+                        <!-- Figura com a imagem de fundo decorativo do item -->
                         <figure class="imagem-membro">
-                            <img src="fundo-time.svg" alt="Foto de Tânia Neves">
+                            <img src="assets/img/img-nossotime/fundo-time.svg" alt="Fundo ilustrativo decorativo do item">
                         </figure>
                         <div class="conteudo-membro">
+                            <!-- Nome do membro -->
                             <h3 class="nome-membro">Tânia Neves</h3>
+                            <!-- Cargo do membro, destacado em negrito -->
                             <p class="cargo-membro"><strong>Produtora Executiva</strong></p>
+                            <!-- Descrição do cargo de Tânia -->
                             <p class="descricao-cargo">
                                 Responsável por gerenciar a produção dos projetos, coordenando equipe, prazos e recursos, garantindo que cada experiência da CineMagic Studios seja entregue com excelência e inovação.
                             </p>
@@ -183,99 +284,151 @@
             </ul>
         </section>
 
-        <!--Seção Contato-->
-        <section class="secao-contato">
-            <!-- Imagem ao lado do formulário -->
+        <!-- ========================================================================================================= -->
+
+        <!-- Seção de Contato: fornece um formulário para os usuários entrarem em contato com a empresa -->
+        <section class="secao-contato" id="contato">
+
+            <!-- Cabeçalho da seção com título principal -->
+            <h1>Entre em Contato</h1>
+
+            <!-- Container principal que agrupa a imagem ilustrativa, elementos gráficos e o formulário -->
             <div class="contato-conteiner">
-                <div class="contato-imagem">
-                    <img src="assets/img/img-contato/ilustracao-contato.svg" alt="Imagem uma ilustração de pessoas entrando em contato" aria-hidden="true">
-                </div>
-                <!--Detalhe em circulo azul , ondas rosa e quadrado amarelo -->
-                <img class="detalhes-imagem-padrao circulo-azul" alt="Imagem de fundo, um círculo azul" src="assets/img/img-contato/circulo-azul.svg" aria-hidden="true">
 
-                <img class="detalhes-imagem-padrao onda-rosa" src="assets/img/img-contato/onda-rosa.svg" alt="Imagem de fundo, uma onda rosa" aria-hidden="true">
+                <!-- Bloco com imagem ilustrativa representando comunicação entre pessoas -->
+                <figure class="contato-imagem">
+                    <img src="assets/img/img-contato/ilustracao-contato.svg" alt="Ilustração de pessoas entrando em contato">
+                </figure>
 
-                <img class="detalhes-imagem-padrao quadrado-amarelo" src="assets/img/img-contato/quadrado-amarelo.svg" alt="Imagem de fundo, um quadrado amarelo" aria-hidden="true">
+                <!-- Elementos decorativos posicionados ao fundo -->
+                <!-- Círculo azul decorativo -->
+                <img class="detalhes-imagem-padrao circulo-azul" src="assets/img/img-contato/circulo-azul.svg" alt="Imagem de fundo, um círculo azul">
 
-                <!-- Formulário de contato -->
-                <div class="contato-formulario">
-                    <h2>Entre em Contato</h2>
+                <!-- Onda rosa decorativa -->
+                <img class="detalhes-imagem-padrao onda-rosa" src="assets/img/img-contato/onda-rosa.svg" alt="Imagem de fundo, uma onda rosa">
+
+                <!-- Quadrado amarelo decorativo -->
+                <img class="detalhes-imagem-padrao quadrado-amarelo" src="assets/img/img-contato/quadrado-amarelo.svg" alt="Imagem de fundo, um quadrado amarelo">
+
+                <!-- Seção contendo o formulário de contato -->
+                <section class="contato-formulario">
+
+                    <!-- Parágrafo introdutório explicando o propósito do formulário -->
                     <p>Preencha o formulário abaixo e retornaremos o mais rápido possível.</p>
+
+                    <!-- Início do formulário para envio de mensagem -->
                     <form action="#" method="POST">
-                        <label for="nome" class="contato-label">Nome</label>
-                        <input type="text" id="nome" name="nome" class="contato-input" placeholder="Seu nome" required>
 
-                        <label for="email" class="contato-label">E-mail</label>
-                        <input type="email" id="email" name="email" class="contato-input" placeholder="Seu e-mail" required>
+                        <!-- Campo: Nome do usuário -->
+                        <div class="grupo-campo">
+                            <label for="nome" class="contato-label">Nome</label>
+                            <input type="text" id="nome" name="nome" class="contato-input" placeholder="Seu nome" required> <!-- Campo obrigatório -->
+                        </div>
 
-                        <label for="assunto" class="contato-label">Assunto</label>
-                        <input type="text" id="assunto" name="assunto" class="contato-input" placeholder="Assunto" required>
+                        <!-- Campo: E-mail do usuário -->
+                        <div class="grupo-campo">
+                            <label for="email" class="contato-label">E-mail</label>
+                            <input type="email" id="email" name="email" class="contato-input" placeholder="Seu e-mail" required> <!-- Campo obrigatório com validação de e-mail -->
+                        </div>
 
-                        <label for="mensagem" class="contato-label">Mensagem</label>
-                        <textarea id="mensagem" name="mensagem" class="contato-textarea" placeholder="Sua mensagem" rows="5" required></textarea>
+                        <!-- Campo: Assunto da mensagem -->
+                        <div class="grupo-campo">
+                            <label for="assunto" class="contato-label">Assunto</label>
+                            <input type="text" id="assunto" name="assunto" class="contato-input" placeholder="Assunto" required>
+                        </div>
 
+                        <!-- Campo: Mensagem do usuário -->
+                        <div class="grupo-campo">
+                            <label for="mensagem" class="contato-label">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" class="contato-textarea" placeholder="Sua mensagem" rows="5" required>
+                        </textarea>
+                        </div>
+
+                        <!-- Botão de envio do formulário -->
                         <button type="submit" class="contato-botao">Enviar Mensagem</button>
                     </form>
-                </div>
+                </section>
             </div>
         </section>
 
+        <!-- ========================================================================================================= -->
+
+        <!-- Seção principal "Designer": destaca a criatividade com uma mensagem e imagem ilustrativa -->
         <section class="designer">
+
+            <!-- Bloco de conteúdo textual da seção -->
             <div class="designer-conteudo">
+                <!-- Título principal com ênfase em histórias e criatividade -->
                 <h1>Dê Vida às Suas<br>Histórias</h1>
             </div>
-            <img src="bacnground.svg" alt="">
+
+            <!-- Imagem ilustrativa criativa posicionada abaixo do texto -->
+            <img src="assets/img/img-rodape/rodape-imagem-criativa.svg" alt="Imagem ilustrativa que mostra uma pagina com um monte de personagem pintando ela" class="imagem-rodape">
+
         </section>
 
+        <!-- ========================================================================================================= -->
 
+        <!-- Rodapé da página -->
         <footer class="footer">
+
+            <!-- Container principal do conteúdo do rodapé -->
             <div class="conteudo-footer">
-          
-              <section class="coluna">
-                <img src="svgviewer-output (16).svg" alt="Logo WeDo" class="logo">
-                <p>WeDo Comunique. Colabore. Crie.</p>
-              </section>
-          
-              <address class="coluna">
-                <h3>Endereço</h3>
-                <p>Rua Prates, 194 - Bom Retiro, São Paulo - SP, 01121-000</p>
-                <p>Público geral: (11) 3456-7890</p>
-              </address>
-          
-              <section class="coluna">
-                <h3>Horário de Atendimento</h3>
-                <p>Segunda a Sexta: 08h às 18h</p>
-                <p>Sábados: 08h às 12h</p>
-                <p>Domingos e Feriados: Fechado</p>
-              </section>
-          
-              <section class="coluna">
-                <h3>Siga</h3>
-                <p>Fique por dentro de tudo que acontece na WeDo</p>
-                <nav class="redes">
-                  <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-                    <img src="instagram.svg" alt="Ícone Instagram" class="redes-icones">
-                    Instagram
-                  </a>
-                  <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-                    <img src="twitter.svg" alt="Ícone Twitter" class="redes-icones">
-                    Twitter
-                  </a>
-                  <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-                    <img src="facebook.svg" alt="Ícone Facebook" class="redes-icones">
-                    Facebook
-                  </a>
-                </nav>
-              </section>
-          
+
+                <!-- Seção institucional com logotipo e slogan -->
+                <section class="coluna">
+                    <img src="svgviewer-output (17).svg" alt="Logotipo da CineMagic Studios com um óculos de realidade virtual acima de um livro aberto, representando tecnologia e narrativa imersiva" class="imagem-logo-cinemagic">
+                    <p>CineMagic Comunique. Colabore. Crie.</p>
+                </section>
+
+                <!-- Seção com endereço de contato -->
+                <address class="coluna">
+                    <h3>Endereço</h3>
+                    <p>Rua Prates, 194 - Bom Retiro, São Paulo - SP, 01121-000</p>
+                    <p>Público geral: (11) 3456-7890</p>
+                </address>
+
+                <!-- Seção com horários de funcionamento -->
+                <section class="coluna">
+                    <h3>Horário de Atendimento</h3>
+                    <p>Segunda a Sexta: 08h às 18h</p>
+                    <p>Sábados: 08h às 12h</p>
+                    <p>Domingos e Feriados: Fechado</p>
+                </section>
+
+                <!-- Seção com links para redes sociais -->
+                <section class="coluna" id="redes">
+                    <h3>Siga</h3>
+                    <p>Fique por dentro de tudo que acontece na CineMagic</p>
+
+                    <!-- Navegação com ícones de redes sociais -->
+                    <nav class="redes">
+                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/img/img-rodape/instagram.svg" alt="Ícone Instagram" class="redes-icones">
+                            Instagram
+                        </a>
+                        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/img/img-rodape/twitter.svg" alt="Ícone Twitter" class="redes-icones">
+                            Twitter
+                        </a>
+                        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/img/img-rodape/facebook.svg" alt="Ícone Facebook" class="redes-icones">
+                            Facebook
+                        </a>
+                    </nav>
+                </section>
+
             </div>
-          
+
+            <!-- Informações de copyright -->
             <div class="copy">
-              © 2025 por WeDo. Orgulhosamente criado com Camly
+                © 2025 por CineMagic. Orgulhosamente criado com Camly
             </div>
-          </footer>
-          
-          
+
+        </footer>
+
+
+
     </main>
 
 </body>

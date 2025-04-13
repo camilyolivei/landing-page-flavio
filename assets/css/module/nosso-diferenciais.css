@@ -1,0 +1,91 @@
+/* ========== SEÇÃO PRINCIPAL: "NOSSO DIFERENCIAIS" ========== */
+
+/* Estilo geral da seção */
+.nosso-diferenciais {
+  padding-top: 10rem; /* Espaço superior da seção */
+  width: 75%; /* Largura da seção (75% da tela) */
+  margin: auto; /* Centralizando a seção */
+  display: flex; /* Usando flexbox para organizar os itens */
+  flex-direction: column; /* Layout em coluna */
+  gap: 2rem; /* Espaçamento entre os itens */
+  font-family: var(--fonte-space-grotesk); /* Definindo a fonte */
+}
+
+/* Conteúdo introdutório da seção (título e parágrafo explicativo) */
+.nosso-diferenciais-conteudo {
+  width: 50%; /* Largura do container de conteúdo */
+  display: flex; /* Usando flexbox para organizar */
+  flex-direction: column; /* Layout em coluna */
+  gap: 2rem; /* Espaçamento entre os itens */
+}
+
+/* Título principal da seção */
+.nosso-diferenciais-titulo {
+  font-size: 2.5rem; /* Tamanho da fonte do título */
+  font-weight: 500; /* Peso da fonte */
+  text-align: start; /* Alinhando o título à esquerda */
+}
+
+/* Parágrafo explicativo sobre os diferenciais */
+.nosso-diferenciais-texto {
+  line-height: 1.7; /* Espaçamento entre as linhas do parágrafo */
+}
+
+/* Lista dos diferenciais (itens organizados em grid) */
+.nosso-diferenciais-lista {
+  display: grid; /* Usando grid para organizar os itens */
+  grid-template-columns: repeat(4, 227px); /* 4 colunas com largura fixa de 227px */
+  gap: 4rem; /* Espaçamento entre os itens */
+  overflow-x: auto; /* Permite rolagem horizontal quando necessário */
+}
+
+/* Remove a barra de rolagem visual no WebKit (browsers como Chrome e Safari) */
+.nosso-diferenciais-lista::-webkit-scrollbar {
+  display: none; /* Escondendo a barra de rolagem */
+}
+
+/* Estilo de cada item individual da lista de diferenciais */
+.nosso-diferenciais-item {
+  display: flex; /* Usando flexbox para organizar os itens */
+  flex-direction: column; /* Layout em coluna */
+  align-items: center; /* Alinhando os itens ao centro */
+  gap: 1rem; /* Espaçamento entre os itens */
+}
+
+/* Estilo da imagem dentro de cada item de diferencial */
+.nosso-diferenciais-item img {
+  width: 220px; /* Largura da imagem */
+  height: 301px; /* Altura da imagem */
+  border-radius: 5px; /* Bordas arredondadas */
+  border: 2px solid; /* Borda ao redor da imagem */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); /* Sombra da imagem para dar destaque */
+  display: block; /* Fazendo a imagem ser exibida como um bloco */
+  overflow: hidden; /* Escondendo qualquer parte da imagem que ultrapasse o limite */
+}
+
+/* ========== RESPONSIVIDADE ========== */
+
+/* Responsividade para telas com largura até 1050px */
+@media (max-width: 1050px) {
+  /* Ajustes no conteúdo da seção */
+  .nosso-diferenciais-conteudo {
+    width: 100%; /* Fazendo o conteúdo ocupar 100% da largura disponível */
+  }
+
+  /* Ajustes na lista de diferenciais */
+  .nosso-diferenciais-lista {
+    grid-template-columns: repeat(4, 227px); /* Mantendo o tamanho dos itens */
+    overflow-x: scroll; /* Ativa rolagem horizontal se necessário */
+  }
+}
+
+/* Responsividade para telas com largura até 750px */
+@media (max-width: 750px) {
+  /* Ajustes na seção principal */
+  .nosso-diferenciais {
+    padding-top: 5rem; /* Reduzindo o espaço superior */
+    width: 90%; /* Aumentando a largura da seção */
+    gap: 3rem; /* Aumentando o espaçamento entre os itens */
+  }
+
+}

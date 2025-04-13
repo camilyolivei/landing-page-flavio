@@ -1,0 +1,56 @@
+/* ========== SEÇÃO "EXPERIÊNCIA DO ESPECTADOR" ========== */
+
+/* Estilo geral da seção */
+.experiencia {
+    background: var(--cor-rosa); /* Cor de fundo da seção */
+    font-family: var(--fonte-roboto); /* Fonte utilizada para o texto */
+    margin: 8rem 0; /* Margem superior e inferior */
+    padding: 8rem 0; /* Espaçamento interno da seção */
+  }
+  
+  /* Container principal */
+  .experiencia-conteudo {
+    width: 75%; /* Largura do container */
+    margin: auto; /* Centralizando o container */
+    display: grid; /* Usando grid para organizar o conteúdo */
+    grid-template-columns: 1fr 1fr; /* Criando 2 colunas para os itens */
+    gap: 5rem; /* Espaçamento entre as colunas */
+    align-items: center; /* Alinhando os itens verticalmente */
+    justify-content: center; /* Centralizando os itens horizontalmente */
+  }
+  
+  /* Título da seção "Experiência do Espectador" */
+  .experiencia-conteudo h2 {
+    font-size: 2.5rem; /* Tamanho da fonte */
+    font-weight: 400; /* Peso da fonte */
+    text-align: start; /* Alinhando o título à esquerda */
+  }
+  
+  /* Parágrafo descritivo dentro da seção */
+  .experiencia-conteudo p {
+    line-height: 1.7; /* Espaçamento entre as linhas do parágrafo */
+  }
+  
+  /* ========== RESPONSIVIDADE ========== */
+  
+  /* Responsividade para telas com largura até 700px */
+  @media (max-width: 700px) {
+    /* Ajustando o padding da seção para telas pequenas */
+    .experiencia {
+      padding: 3rem 0; /* Menos espaçamento nas laterais e mais compactado */
+    }
+    
+    /* Ajustando o layout do container para telas menores */
+    .experiencia-conteudo {
+      grid-template-columns: 1fr; /* Apenas uma coluna */
+      gap: 2rem; /* Reduzindo o espaçamento entre os itens */
+      width: 90%; /* O container ocupa 90% da largura da tela */
+      padding: 3rem 0; /* Menos espaçamento interno */
+    }
+  
+    /* Ajustando o tamanho do título para telas pequenas */
+    .experiencia-conteudo h2 {
+      font-size: 1.8rem; /* Tamanho de fonte menor */
+    }
+  }
+  

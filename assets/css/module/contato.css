@@ -1,80 +1,91 @@
+/* ========== SEÇÃO "CONTATO" ========== */
+
 /* Estilização da seção de contato */
 .secao-contato {
-  background-color: #f5f5f5;
+  background-color: #f5f5f5; /* Cor de fundo suave */
 }
+
+/* Container principal que agrupa a imagem e o formulário */
 .contato-conteiner {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr; /* Divide o container em duas colunas */
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100vh; /* Altura da seção igual à altura da janela */
   width: 80%;
   margin: auto;
   padding: 2rem;
-  gap: 6rem;
-  font-family: "Space Grotesk", sans-serif;
+  gap: 6rem; /* Espaço entre as colunas */
+  font-family: var(--fonte-space-grotesk);
 }
-/* Estilização da imagem */
 
+/* Estilização da imagem */
 .contato-imagem {
   z-index: 3;
-  max-width: 480px;
+  max-width: 480px; /* Limita a largura da imagem */
 }
+
 .contato-imagem img {
-  width:100%;
-  height: auto;
+  width: 100%;
+  height: auto; /* Mantém a proporção da imagem */
   z-index: 3;
 }
-.detalhes-imagem-padrao{
+
+/* Elementos gráficos de fundo (decorativos) */
+.detalhes-imagem-padrao {
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
-
 }
+
+/* Círculo azul decorativo */
 .circulo-azul {
   background-size: contain;
-  transform: translate(-6%, -110%);
+  transform: translate(-6%, -110%); /* Posiciona o círculo acima e à esquerda */
   width: 210px;
   height: 210px;
-  z-index: 1;
+  z-index: 1; /* Coloca atrás dos outros elementos */
 }
-.onda-rosa{
-  transform: translate(120%, 180%);
+
+/* Onda rosa decorativa */
+.onda-rosa {
+  transform: translate(120%, 180%); /* Posiciona a onda no canto inferior direito */
   width: 170px;
   height: 120px;
-  z-index: 2;
-
+  z-index: 2; /* Coloca na frente do círculo azul */
 }
-.quadrado-amarelo{
-  transform: translate(130%, 160%);
+
+/* Quadrado amarelo decorativo */
+.quadrado-amarelo {
+  transform: translate(130%, 160%); /* Posiciona o quadrado no canto inferior direito */
   width: 200px;
   height: 120px;
-  z-index:1;
-  border-radius: 15px;
-
+  z-index: 1;
+  border-radius: 15px; /* Bordas arredondadas */
 }
 
 /* Estilização do formulário */
 .contato-formulario {
-  background-color: #fff;
+  background-color: #fff; /* Fundo branco para o formulário */
   padding: 2.5rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  max-width: 400px; /* Limita a largura do formulário */
 }
 
-/* Título */
-.contato-formulario h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-  color: #000;
+/* Título da seção de contato */
+.secao-contato h1 {
+  font-size: 2.5rem;
+  width: 75%;
+  margin: auto;
+  padding: 4rem 0; /* Espaçamento em torno do título */
 }
 
-/* Texto abaixo do título */
+/* Texto explicativo abaixo do título */
 .contato-formulario p {
   font-size: 14px;
-  color: #666;
-  margin-bottom: 20px;
+  color: #666; /* Cor cinza para o texto */
+  margin-bottom: 20px; /* Espaçamento inferior */
 }
 
 /* Estilização dos labels */
@@ -82,98 +93,99 @@
   display: block;
   text-align: left;
   font-size: 14px;
-  color: #333;
-  margin-top: 10px;
+  color: #333; /* Cor de texto mais forte */
+  margin-top: 10px; /* Espaçamento superior */
 }
 
 /* Estilização dos inputs e textarea */
 .contato-input,
 .contato-textarea {
-  width: calc(100% - 20px); 
+  width: calc(100% - 20px); /* Preenche a largura disponível, considerando o padding */
   padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-top: 5px;
+  border: 1px solid #ccc; /* Borda suave */
+  border-radius: 5px; /* Bordas arredondadas */
+  margin-top: 5px; /* Espaçamento superior */
   font-size: 16px;
-  background-color: #f9f9f9;
-  box-sizing: border-box; 
+  background-color: #f9f9f9; /* Fundo leve */
+  box-sizing: border-box; /* Inclui padding e borda no cálculo do tamanho */
 }
 
-/* Caixa de texto da mensagem */
+/* Caixa de texto da mensagem (textarea) */
 .contato-textarea {
-  resize: none;
-  font-family: "Space Grotesk", sans-serif;
+  resize: none; /* Impede o redimensionamento */
+  font-family: var(--fonte-space-grotesk);
 }
 
 /* Botão de envio */
 .contato-botao {
-  width: 100%;
+  width: 100%; /* Preenche a largura do formulário */
   padding: 10px;
-  margin-top: 15px;
-  background-color: black;
-  color: white;
+  margin-top: 15px; /* Espaçamento superior */
+  background-color: black; /* Cor de fundo preta */
+  color: var(--cor-branco); /* Cor do texto branco */
   border: none;
-  border-radius: 5px;
+  border-radius: 5px; /* Bordas arredondadas */
   font-size: 16px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.3s; /* Transição suave ao passar o mouse */
 }
 
 .contato-botao:hover {
-  background-color: #333;
+  background-color: #333; /* Cor do botão ao passar o mouse */
 }
-
 
 /* Responsividade para tablets e celulares */
 @media (max-width: 1024px) {
   .contato-conteiner {
-    grid-template-columns: 1fr;
-    gap: 3rem;
-    height: auto;
-    padding: 2rem 1rem;
+    grid-template-columns: 1fr; /* Em telas menores, exibe o conteúdo em uma coluna */
+    gap: 3rem; /* Espaçamento reduzido entre os itens */
+    height: auto; /* Ajusta a altura automaticamente */
+    padding: 2rem 1rem; /* Ajusta o padding para telas menores */
   }
 
   .contato-imagem {
-    max-width: 90%;
-    margin: 0 auto;
+    max-width: 90%; /* Ajusta a largura da imagem */
+    margin: 0 auto; /* Centraliza a imagem */
   }
 
   .contato-formulario {
-    max-width: 100%;
+    max-width: 100%; /* Permite que o formulário ocupe 100% da largura */
   }
 
   .circulo-azul,
   .onda-rosa,
   .quadrado-amarelo {
-    display: none;
+    display: none; /* Oculta os elementos gráficos em telas menores */
   }
 }
 
 @media (max-width: 600px) {
   .contato-formulario {
-    padding: 2rem 1rem;
+    padding: 2rem 1rem; /* Ajusta o padding para telas pequenas */
   }
 
-  .contato-formulario h2 {
-    font-size: 20px;
+  .secao-contato h1 {
+    font-family: var(--fonte-space-grotesk); 
+    font-size: 2.5rem;
+    width: 90%; /* Ajusta a largura do título */
   }
 
   .contato-formulario p {
-    font-size: 13px;
+    font-size: 13px; /* Ajusta o tamanho da fonte do parágrafo */
   }
 
   .contato-label {
-    font-size: 13px;
+    font-size: 13px; /* Ajusta o tamanho da fonte dos labels */
   }
 
   .contato-input,
   .contato-textarea {
-    font-size: 14px;
-    padding: 8px;
+    font-size: 14px; /* Ajusta o tamanho da fonte dos inputs */
+    padding: 8px; /* Ajusta o padding dos inputs */
   }
 
   .contato-botao {
-    font-size: 14px;
-    padding: 8px;
+    font-size: 14px; /* Ajusta o tamanho da fonte do botão */
+    padding: 8px; /* Ajusta o padding do botão */
   }
 }

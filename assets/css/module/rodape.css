@@ -1,65 +1,76 @@
+/* Rodapé principal */
 .footer {
-    background-color: #F4B618;
-    padding: 8rem 20px 0 20px;
-    font-family: Arial, sans-serif;
-    color: black;
-  }
-  
+  background-color: var(--cor-amarelo); /* Cor de fundo do rodapé */
+  padding: 13rem 20px 0 20px; /* Espaçamento interno */
+  font-family: Arial, sans-serif; /* Fonte padrão */
+  color: black; /* Cor do texto */
+  position: relative; /* Necessário para sobreposição se houver */
+}
+
+/* Container de colunas do conteúdo do rodapé */
+.conteudo-footer {
+  display: grid; /* Layout em grid */
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Responsivo */
+  gap: 30px; /* Espaçamento entre colunas */
+  max-width: 1200px; /* Largura máxima */
+  margin: auto; /* Centraliza horizontalmente */
+  padding-bottom: 50px; /* Espaço inferior */
+}
+
+/* Estilo genérico das colunas */
+.footer .coluna {
+  list-style: none; /* Remove marcadores de lista */
+  padding: 0; /* Remove espaçamento padrão */
+}
+
+/* Títulos das seções */
+.footer .coluna h3 {
+  margin-bottom: 10px; /* Espaço abaixo do título */
+}
+
+/* Logo institucional (imagem da CineMagic) */
+.imagem-logo-cinemagic {
+  width: 50px; /* Tamanho da logo */
+  margin-bottom: 10px; /* Espaço abaixo da imagem */
+}
+
+/* Estilos dos links */
+.footer a {
+  color: black; /* Cor padrão dos links */
+  text-decoration: none; /* Remove sublinhado */
+}
+
+.footer a:hover {
+  text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+/* Ícones das redes sociais */
+.redes-icones {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px; /* Espaço entre ícone e texto */
+}
+
+/* Estilo dos links de redes sociais */
+.redes a {
+  display: flex; /* Ícone + texto lado a lado */
+  align-items: center; /* Alinha verticalmente */
+  padding-top: 1rem; /* Espaço entre os itens */
+}
+
+/* Seção de direitos autorais */
+.copy {
+  text-align: center; /* Centraliza texto */
+  background-color: var(--cor-preto); /* Fundo escuro */
+  color: var(--cor-branco); /* Texto branco */
+  padding: 10px; /* Espaçamento interno */
+  font-size: 14px; /* Tamanho da fonte */
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 600px) {
   .conteudo-footer {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 30px;
-    max-width: 1200px;
-    margin: auto;
-    padding-bottom: 50px;
+    grid-template-columns: 1fr; /* Apenas uma coluna */
+    text-align: center; /* Centraliza conteúdo */
   }
-  
-  .footer .coluna {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer .coluna h3 {
-    margin-bottom: 10px;
-  }
-  
-  .footer a {
-    color: black;
-    text-decoration: none;
-  }
-  
-  .footer a:hover {
-    text-decoration: underline;
-  }
-  
-  .logo {
-    width: 50px;
-    margin-bottom: 10px;
-  }
-  
-  .copy {
-    text-align: center;
-    background-color: black;
-    color: white;
-    padding: 10px;
-    font-size: 14px;
-  }
-  
-  .redes-icones {
-    width: 24px;
-    height: 24px;
-    margin-right: 5px;
-  }
-  .redes a{
-    display: flex;
-    align-items: center;
-    padding-top: 1rem;
-  }
-  
-  @media (max-width: 600px) {
-    .conteudo-footer {
-      grid-template-columns: 1fr;
-      text-align: center;
-    }
-  }
-  
+}
