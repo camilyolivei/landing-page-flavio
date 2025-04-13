@@ -30,7 +30,7 @@
 
 /* Logo institucional (imagem da CineMagic) */
 .imagem-logo-cinemagic {
-  width: 50px; /* Tamanho da logo */
+  width: 120px; /* Tamanho da logo */
   margin-bottom: 10px; /* Espaço abaixo da imagem */
 }
 
@@ -59,7 +59,7 @@
 }
 
 /* Seção de direitos autorais */
-.copy {
+.direitos {
   text-align: center; /* Centraliza texto */
   background-color: var(--cor-preto); /* Fundo escuro */
   color: var(--cor-branco); /* Texto branco */

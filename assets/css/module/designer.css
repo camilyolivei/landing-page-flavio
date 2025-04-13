@@ -54,7 +54,7 @@
     /* Ajustes na imagem */
     .designer img {
       width: 80%; /* Reduz a largura da imagem */
-      margin-bottom: -5rem; /* Ajusta o posicionamento vertical */
+      margin-bottom: 6rem; /* Ajusta o posicionamento vertical */
     }
   }
   

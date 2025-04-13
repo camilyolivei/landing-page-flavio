@@ -22,11 +22,13 @@ a{
 }
 
 :root {
+    /*Cores*/
     --cor-branco: white;
     --cor-preto: black;
     --cor-amarelo:#FFBF23;
     --cor-rosa: #FFD7EF;
 
+    /*Fontes*/
     --fonte-roboto:"Roboto", sans-serif;
     --fonte-space-grotesk:"Space Grotesk", sans-serif;
   }
