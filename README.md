@@ -6,9 +6,9 @@ O CineMagic Studios é uma produtora de conteúdo cinematográfico especializada
 
 ## Sobre este Projeto (Site Institucional)
 
-![Telas](https://i.ibb.co/21c1pTKh/Imagem-do-Whats-App-de-2025-04-13-s-14-43-29-30a895b3-removebg-preview.png)
+![Telas](https://a.imagem.app/Bz4PXE.png)
 
-Este repositório contém o código fonte do site institucional do CineMagic Studios. O site tem como objetivo apresentar a empresa.
+Este repositório contém o código fonte do site institucional do CineMagic Studios. O site tem como objetivo apresentar a empresa, seus serviços e seu portfólio de projetos inovadores em realidade aumentada e experiências imersivas.
 
 ## Ferramentas Utilizadas
 
@@ -19,7 +19,11 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias web fundamenta
 
 ## Como Visualizar o Projeto
 
-Para visualizar este site, siga os seguintes passos:
+Link do site = https://camilyolivei.github.io/landing-page-flavio/
+
+ou
+
+siga os seguintes passos:
 
 1.  Clone este repositório para o seu computador:
     ```bash
