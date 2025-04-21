@@ -1,191 +1,290 @@
 /* ========== SEÇÃO "CONTATO" ========== */
 
-/* Estilização da seção de contato */
+/* Seção de contato */
 .secao-contato {
-  background-color: #f5f5f5; /* Cor de fundo suave */
+  background-color: #f8f9fa;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
-/* Container principal que agrupa a imagem e o formulário */
+/* Título da seção */
+.secao-contato h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #212529;
+  text-align: center;
+  margin-bottom: 6rem;
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Linha abaixo do título */
+.secao-contato h1::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: var(--cor-preto);
+  margin: 15px auto 0;
+  border-radius: 2px;
+}
+
+/* Container principal da seção de contato */
 .contato-conteiner {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Divide o container em duas colunas */
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: center;
-  height: 100vh; /* Altura da seção igual à altura da janela */
+  min-height: 70vh;
   width: 80%;
   margin: auto;
-  padding: 2rem;
-  gap: 6rem; /* Espaço entre as colunas */
+  padding: 0 2rem;
+  gap: 6rem;
   font-family: var(--fonte-space-grotesk);
 }
 
-/* Estilização da imagem */
+/* Imagem da seção */
 .contato-imagem {
   z-index: 3;
-  max-width: 480px; /* Limita a largura da imagem */
+  max-width: 480px;
 }
 
 .contato-imagem img {
   width: 100%;
-  height: auto; /* Mantém a proporção da imagem */
+  height: auto;
   z-index: 3;
 }
 
-/* Elementos gráficos de fundo (decorativos) */
+/* Detalhes gráficos decorativos */
 .detalhes-imagem-padrao {
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
 }
 
-/* Círculo azul decorativo */
+/* Círculo azul */
 .circulo-azul {
   background-size: contain;
-  transform: translate(-6%, -110%); /* Posiciona o círculo acima e à esquerda */
+  transform: translate(-6%, -110%);
   width: 210px;
   height: 210px;
-  z-index: 1; /* Coloca atrás dos outros elementos */
+  z-index: 1;
 }
 
-/* Onda rosa decorativa */
+/* Onda rosa */
 .onda-rosa {
-  transform: translate(120%, 180%); /* Posiciona a onda no canto inferior direito */
+  transform: translate(120%, 180%);
   width: 170px;
   height: 120px;
-  z-index: 2; /* Coloca na frente do círculo azul */
+  z-index: 2;
 }
 
-/* Quadrado amarelo decorativo */
+/* Quadrado amarelo */
 .quadrado-amarelo {
-  transform: translate(130%, 160%); /* Posiciona o quadrado no canto inferior direito */
+  transform: translate(130%, 160%);
   width: 200px;
   height: 120px;
   z-index: 1;
-  border-radius: 15px; /* Bordas arredondadas */
+  border-radius: 15px;
 }
 
-/* Estilização do formulário */
+/* Formulário de contato */
 .contato-formulario {
-  background-color: #fff; /* Fundo branco para o formulário */
-  padding: 2.5rem;
-  border-radius: 10px; /* Bordas arredondadas */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  max-width: 400px; /* Limita a largura do formulário */
+  background-color: var(--cor-branco);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
 }
 
-/* Título da seção de contato */
-.secao-contato h1 {
-  font-size: 2.5rem;
-  width: 75%;
-  margin: auto;
-  padding: 4rem 0; /* Espaçamento em torno do título */
-}
-
-/* Texto explicativo abaixo do título */
+/* Parágrafo explicativo */
 .contato-formulario p {
-  font-size: 14px;
-  color: #666; /* Cor cinza para o texto */
-  margin-bottom: 20px; /* Espaçamento inferior */
+  font-size: 1.1rem;
+  color: #495057;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  text-align: center;
 }
 
-/* Estilização dos labels */
+/* Grupo de campo do formulário */
+.grupo-campo {
+  margin-bottom: 25px;
+}
+
+/* Label do campo */
 .contato-label {
   display: block;
   text-align: left;
-  font-size: 14px;
-  color: #333; /* Cor de texto mais forte */
-  margin-top: 10px; /* Espaçamento superior */
+  font-size: 1rem;
+  color: #343a40;
+  margin-bottom: 10px;
+  font-weight: 600;
 }
 
-/* Estilização dos inputs e textarea */
+/* Input e textarea */
 .contato-input,
 .contato-textarea {
-  width: calc(100% - 20px); /* Preenche a largura disponível, considerando o padding */
-  padding: 10px;
-  border: 1px solid #ccc; /* Borda suave */
-  border-radius: 5px; /* Bordas arredondadas */
-  margin-top: 5px; /* Espaçamento superior */
-  font-size: 16px;
-  background-color: #f9f9f9; /* Fundo leve */
-  box-sizing: border-box; /* Inclui padding e borda no cálculo do tamanho */
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-/* Caixa de texto da mensagem (textarea) */
+/* Placeholder */
+.contato-input::placeholder,
+.contato-textarea::placeholder {
+  color: #6c757d;
+  font-size: 0.95rem;
+}
+
+/* Foco em input e textarea */
+.contato-input:focus,
+.contato-textarea:focus {
+  outline: none;
+  background-color: #ffffff;
+}
+
+/* Área de mensagem */
 .contato-textarea {
-  resize: none; /* Impede o redimensionamento */
+  resize: vertical;
+  min-height: 150px;
   font-family: var(--fonte-space-grotesk);
 }
 
 /* Botão de envio */
 .contato-botao {
-  width: 100%; /* Preenche a largura do formulário */
-  padding: 10px;
-  margin-top: 15px; /* Espaçamento superior */
-  background-color: black; /* Cor de fundo preta */
-  color: var(--cor-branco); /* Cor do texto branco */
+  width: 100%;
+  padding: 15px 25px;
+  margin-top: 30px;
+  background-color: #212529;
+  color: #fff;
   border: none;
-  border-radius: 5px; /* Bordas arredondadas */
-  font-size: 16px;
+  border-radius: 8px;
+  font-size: 1.15rem;
+  font-weight: 700;
   cursor: pointer;
-  transition: 0.3s; /* Transição suave ao passar o mouse */
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  transition: transform 0.2s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 .contato-botao:hover {
-  background-color: #333; /* Cor do botão ao passar o mouse */
+  background-color:var(--cor-preto);
+  transform: translateY(-5px);
+  
 }
+/* ====== RESPONSIVIDADE ====== */
 
-/* Responsividade para tablets e celulares */
 @media (max-width: 1024px) {
+  /* Em telas médias, usa apenas uma coluna */
   .contato-conteiner {
-    grid-template-columns: 1fr; /* Em telas menores, exibe o conteúdo em uma coluna */
-    gap: 3rem; /* Espaçamento reduzido entre os itens */
-    height: auto; /* Ajusta a altura automaticamente */
-    padding: 2rem 1rem; /* Ajusta o padding para telas menores */
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    min-height: auto;
+    padding: 0 1rem;
+    width: 90%;
   }
 
+  /* Imagem centralizada e menor */
   .contato-imagem {
-    max-width: 90%; /* Ajusta a largura da imagem */
-    margin: 0 auto; /* Centraliza a imagem */
+    max-width: 80%;
+    margin: 0 auto;
   }
 
+  /* Esconde elementos gráficos decorativos */
+  .circulo-azul, .onda-rosa, .quadrado-amarelo {
+    display: none;
+  }
+
+  /* Ajusta o formulário para melhor encaixe */
   .contato-formulario {
-    max-width: 100%; /* Permite que o formulário ocupe 100% da largura */
+    max-width: 100%;
+    padding: 2.5rem;
+    margin: 0 auto;
   }
 
-  .circulo-azul,
-  .onda-rosa,
-  .quadrado-amarelo {
-    display: none; /* Oculta os elementos gráficos em telas menores */
+  /* Texto do parágrafo menor */
+  .contato-formulario p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  /* Espaçamento entre os campos reduzido */
+  .grupo-campo {
+    margin-bottom: 20px;
+  }
+
+  /* Label com tamanho um pouco menor */
+  .contato-label {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+  }
+
+  /* Inputs e textarea menores */
+  .contato-input,
+  .contato-textarea {
+    padding: 12px 15px;
+    font-size: 0.95rem;
+  }
+
+  /* Altura mínima da textarea reduzida */
+  .contato-textarea {
+    min-height: 120px;
+  }
+
+  /* Botão de envio com tamanho ajustado */
+  .contato-botao {
+    padding: 12px 20px;
+    font-size: 1.05rem;
+    margin-top: 25px;
   }
 }
 
 @media (max-width: 600px) {
+  /* Ajustes extras para telas pequenas (celulares) */
   .contato-formulario {
-    padding: 2rem 1rem; /* Ajusta o padding para telas pequenas */
+    padding: 2rem 1rem;
   }
 
-  .secao-contato h1 {
-    font-family: var(--fonte-space-grotesk); 
-    font-size: 2.5rem;
-    width: 90%; /* Ajusta a largura do título */
-  }
-
+  /* Parágrafo com fonte ainda menor */
   .contato-formulario p {
-    font-size: 13px; /* Ajusta o tamanho da fonte do parágrafo */
+    font-size: 0.9rem;
+    margin-bottom: 15px;
   }
 
+  /* Espaçamento mais compacto nos campos */
+  .grupo-campo {
+    margin-bottom: 15px;
+  }
+
+  /* Label mais compacta */
   .contato-label {
-    font-size: 13px; /* Ajusta o tamanho da fonte dos labels */
+    font-size: 0.9rem;
+    margin-bottom: 6px;
   }
 
+  /* Inputs e textarea mais compactos */
   .contato-input,
   .contato-textarea {
-    font-size: 14px; /* Ajusta o tamanho da fonte dos inputs */
-    padding: 8px; /* Ajusta o padding dos inputs */
+    padding: 10px 12px;
+    font-size: 0.9rem;
   }
 
+  /* Textarea com altura mínima ainda menor */
+  .contato-textarea {
+    min-height: 100px;
+  }
+
+  /* Botão de envio menor e com menos espaçamento */
   .contato-botao {
-    font-size: 14px; /* Ajusta o tamanho da fonte do botão */
-    padding: 8px; /* Ajusta o padding do botão */
+    padding: 10px 15px;
+    font-size: 1rem;
+    margin-top: 20px;
+    letter-spacing: 0.5px;
   }
 }

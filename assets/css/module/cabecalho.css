@@ -54,7 +54,6 @@
 
 /* Acessibilidade visual ao focar com teclado */
 .menu .menu-item a:focus-visible {
-    outline: 2px solid var(--cor-destaque, #0055ff);
     outline-offset: 4px;
     border-radius: 4px;
 }

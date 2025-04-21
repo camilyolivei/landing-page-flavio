@@ -20,11 +20,7 @@
   }
   
   /* Título da seção "Experiência do Espectador" */
-  .experiencia-conteudo h2 {
-    font-size: 2.5rem; /* Tamanho da fonte */
-    font-weight: 400; /* Peso da fonte */
-    text-align: start; /* Alinhando o título à esquerda */
-  }
+  
   
   /* Parágrafo descritivo dentro da seção */
   .experiencia-conteudo p {
@@ -46,11 +42,6 @@
       gap: 2rem; /* Reduzindo o espaçamento entre os itens */
       width: 90%; /* O container ocupa 90% da largura da tela */
       padding: 3rem 0; /* Menos espaçamento interno */
-    }
-  
-    /* Ajustando o tamanho do título para telas pequenas */
-    .experiencia-conteudo h2 {
-      font-size: 1.8rem; /* Tamanho de fonte menor */
     }
   }
   

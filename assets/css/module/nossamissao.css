@@ -18,12 +18,6 @@
     align-items: center; /* Alinhamento vertical no centro */
 }
 
-/* Título da seção "Nossa Missão" */
-.nossa-missao h2 {
-    font-size: 2.5rem; /* Tamanho do título */
-    font-weight: 400; /* Peso da fonte */
-    margin: 0; /* Removendo margens extras */
-}
 
 /* Parágrafo dentro da missão */
 .nossa-missao p {
@@ -49,7 +43,5 @@
     }
 
     /* Ajustando o tamanho do título para telas pequenas */
-    .nossa-missao h2 {
-        font-size: 1.8rem; /* Tamanho do título reduzido */
-    }
+    
 }

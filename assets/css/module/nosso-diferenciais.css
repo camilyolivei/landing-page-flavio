@@ -19,13 +19,6 @@
   gap: 2rem; /* Espaçamento entre os itens */
 }
 
-/* Título principal da seção */
-.nosso-diferenciais-titulo {
-  font-size: 2.5rem; /* Tamanho da fonte do título */
-  font-weight: 500; /* Peso da fonte */
-  text-align: start; /* Alinhando o título à esquerda */
-}
-
 /* Parágrafo explicativo sobre os diferenciais */
 .nosso-diferenciais-texto {
   line-height: 1.7; /* Espaçamento entre as linhas do parágrafo */

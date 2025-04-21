@@ -1,34 +1,116 @@
-@import 'module/cabecalho.css';
-@import 'module/introducao.css';
-@import 'module/nosso-diferenciais.css';
-@import 'module/contato.css';
-@import 'module/rodape.css';
-@import 'module/nossotime.css';
-@import 'module/designer.css';
-@import 'module/nossamissao.css';
-@import 'module/experiencia.css';
+@import "module/cabecalho.css";
+@import "module/introducao.css";
+@import "module/nosso-diferenciais.css";
+@import "module/contato.css";
+@import "module/rodape.css";
+@import "module/nossotime.css";
+@import "module/designer.css";
+@import "module/nossamissao.css";
+@import "module/experiencia.css";
+@import "module/enviar-formulario.css";
 
-
-/*Css global*/
-*{
+/*==================*/
+/* Variáveis Globais */
+/*==================*/
+:root {
+    /* Cores principais utilizadas no site */
+    --cor-branco: white;
+    --cor-preto: black;
+    --cor-amarelo: #ffbf23;
+    --cor-rosa: #ffd7ef;
+  
+    /* Fontes utilizadas no site */
+    --fonte-roboto: "Roboto", sans-serif;
+    --fonte-space-grotesk: "Space Grotesk", sans-serif;
+  
+    /* Tamanhos padrão para títulos */
+    --fonte-titulo-roboto: 2.5rem;
+    --fonte-titulo-spacegrotesk: 2.5rem;
+  }
+  
+  /*==================*/
+  /* CSS Global       */
+  /*==================*/
+  
+  /* Ativa rolagem suave para âncoras */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Reset de margem e padding para todos os elementos,
+     e impede rolagem horizontal */
+  * {
     padding: 0;
     margin: 0;
     overflow-x: hidden;
-    
-}
-a{
+  }
+  
+  /* Remove sublinhado de links e define cor branca como padrão */
+  a {
     text-decoration: none;
     color: white;
-}
-
-:root {
-    /*Cores*/
-    --cor-branco: white;
-    --cor-preto: black;
-    --cor-amarelo:#FFBF23;
-    --cor-rosa: #FFD7EF;
-
-    /*Fontes*/
-    --fonte-roboto:"Roboto", sans-serif;
-    --fonte-space-grotesk:"Space Grotesk", sans-serif;
   }
+  
+  /*==================*/
+  /* Estilos de Texto */
+  /*==================*/
+  
+  /* Estilo para títulos com fonte Roboto */
+  .fonte-roboto-titulo {
+    font-family: var(--fonte-roboto);
+    font-size: var(--fonte-titulo-roboto);
+    font-weight: 400;
+  }
+  
+  /* Estilo para títulos com fonte Space Grotesk */
+  .fonte-spacegrotesk-titulo {
+    font-family: var(--fonte-space-grotesk);
+    font-size: var(--fonte-titulo-spacegrotesk);
+    font-weight: 500;
+    text-align: start;
+    margin-bottom: 1rem;
+  }
+  
+  /*==================*/
+  /* Estilo da Seta   */
+  /*==================*/
+  
+  /* Seta fixa na tela, usada para voltar ao topo ou navegação */
+  .seta {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 1.4rem;
+    background-color: var(--cor-preto);
+    color: var(--cor-branco);
+    padding: 0.6rem 1rem;
+    border-radius: 50%;
+    text-decoration: none;
+    opacity: 1;
+    z-index: 99;
+  }
+  
+  /* Efeito ao passar o mouse na seta */
+  .seta:hover {
+    background-color: #FE393C;
+    color: var(--cor-preto);
+    transform: scale(1.1);
+  }
+  
+  /* Tamanho da imagem dentro da seta */
+  .seta .seta-imagem {
+    width: 20px;
+    height: 25px;
+  }
+  
+  /*==================*/
+  /* Responsividade   */
+  /*==================*/
+  
+  /* Ajusta tamanho da fonte em telas menores */
+  @media (max-width: 700px) {
+    .fonte-roboto-tamanho {
+      font-size: 1.8rem; /* Tamanho do título reduzido */
+    }
+  }
+  

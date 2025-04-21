@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- Ícone que aparece na aba do navegador (favicon) -->
-    <link rel="icon" type="image/png" href="assets/img/img-cabecalho/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="assets/img/img-cabecalho/favicon.png" sizes="32x32">
 
     <!-- Importação de fontes do Google Fonts -->
     <!-- Fonte "Space Grotesk" com pesos de 300 a 700 -->
@@ -24,6 +24,9 @@
 </head>
 
 <body>
+    <a href="#introducao" class="seta">
+        <img src="assets/img/img-seta/seta.png" alt="Uma imagem de triangulo apontando para cima, indicando que o usuário deve clicar caso queira ir para a introdução" class="seta-imagem">
+    </a>
     <!-- Cabeçalho principal do site -->
     <header class="main_cabecalho" aria-label="Cabeçalho principal do site">
 
@@ -72,7 +75,7 @@
                 </h1>
 
                 <!-- Imagem ilustrativa exibida apenas em dispositivos móveis -->
-                <img class="introducao-imagem-mobile" src="assets/img/img-introducao/imagem-ilustrativa-1.svg" alt="Ilustração vetorial de uma pessoa usando óculos de realidade virtual, com gráficos ao fundo representando inovação">
+                <img class="introducao-imagem-mobile" src="assets/img/img-introducao/imagem-ilustrativa-1.svg" alt="Ilustração de três pessoas empilhadas, trabalhando juntas na construção de uma porta, simbolizando o acesso a experiências inovadoras.">
 
                 <!-- Parágrafo introdutório explicando o foco da empresa -->
                 <p class="introducao-texto">
@@ -116,7 +119,8 @@
 
             <!-- Ilustração complementar (aparece em telas maiores) -->
             <div class="introducao-imagem">
-                <img src="assets/img/img-introducao/imagem-ilustrativa-1.svg" alt="Ilustração artística de uma pessoa utilizando óculos de realidade virtual, com elementos gráficos de conexão e interação ao fundo">
+                <img src="assets/img/img-introducao/imagem-ilustrativa-1.svg" alt="Ilustração de três pessoas empilhadas, trabalhando juntas na construção de uma porta, simbolizando o acesso a experiências inovadoras.">
+
             </div>
         </section>
 
@@ -127,7 +131,7 @@
             <!-- Container da missão com agrupamento semântico -->
             <div>
                 <!-- Título da seção  -->
-                <h2 id="titulo-nossa-missao">Nossa Missão</h2>
+                <h2 id="titulo-nossa-missao" class="fonte-roboto-titulo">Nossa Missão</h2>
 
                 <!-- Parágrafo descritivo da missão -->
                 <p>
@@ -142,7 +146,7 @@
         <section class="nosso-diferenciais" id="nosso-diferenciais">
             <div class="nosso-diferenciais-conteudo">
                 <!-- Título da seção -->
-                <h1 class="nosso-diferenciais-titulo">Nosso diferenciais</h1>
+                <h1 class="fonte-spacegrotesk-titulo">Nosso diferenciais</h1>
 
                 <!-- Parágrafo explicativo sobre a abordagem da empresa -->
                 <p class="nosso-diferenciais-texto">
@@ -191,7 +195,7 @@
             <article class="experiencia-conteudo">
 
                 <!-- Título principal da seção -->
-                <h2>Experiência do Espectador</h2>
+                <h2 class="fonte-roboto-titulo">Experiência do Espectador</h2>
 
                 <!-- Parágrafo explicativo sobre a experiência oferecida -->
                 <p>
@@ -208,7 +212,7 @@
         <!-- Seção "Nosso Time" -->
         <section class="nosso-time" id="time">
             <!-- Título da seção -->
-            <h2 class="titulo-time">Nosso Time</h2>
+            <h2 class="fonte-spacegrotesk-titulo">Nosso Time</h2>
 
             <!-- Lista dos membros do time -->
             <ul class="lista-time">
@@ -319,7 +323,7 @@
                     <p>Preencha o formulário abaixo e retornaremos o mais rápido possível.</p>
 
                     <!-- Início do formulário para envio de mensagem -->
-                    <form action="#" method="POST">
+                    <form action="./enviar-formulario.html" target="_blank" class="formulario-contato" aria-label="Formulário de contato para envio de mensagens">
 
                         <!-- Campo: Nome do usuário -->
                         <div class="grupo-campo">
@@ -347,7 +351,8 @@
                         </div>
 
                         <!-- Botão de envio do formulário -->
-                        <button type="submit" class="contato-botao">Enviar Mensagem</button>
+
+                        <input type="submit" value="Enviar mensagem" class="contato-botao">
                     </form>
                 </section>
             </div>
@@ -408,15 +413,15 @@
 
                     <!-- Navegação com ícones de redes sociais -->
                     <nav class="redes">
-                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.instagram.com" target="_blank">
                             <img src="assets/img/img-rodape/instagram.svg" alt="Ícone Instagram" class="redes-icones">
                             Instagram
                         </a>
-                        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.twitter.com" target="_blank">
                             <img src="assets/img/img-rodape/twitter.svg" alt="Ícone Twitter" class="redes-icones">
                             Twitter
                         </a>
-                        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.facebook.com" target="_blank">
                             <img src="assets/img/img-rodape/facebook.svg" alt="Ícone Facebook" class="redes-icones">
                             Facebook
                         </a>
@@ -432,4 +437,5 @@
         </footer>
     </main>
 </body>
+
 </html>
