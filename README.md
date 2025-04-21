@@ -19,7 +19,6 @@ Este site foi desenvolvido como uma **landing page moderna**, destacando os prin
 
 - **HTML5**  
 - **CSS3**  
-- **JavaScript (básico, se aplicável)**  
 - **Responsividade com Media Queries**  
 - **Editor usado:** [Visual Studio Code](https://code.visualstudio.com/)  
 - **Design:** Customizado com foco em estética moderna e UX intuitivo
@@ -81,7 +80,9 @@ open index.html     # macOS
 ```
 landing-page-flavio/
 │
-├── assets/                   # Pasta com imagens e outros arquivos de mídia
+├── assets/                   # Arquivos estáticos do projeto
+│   ├── img/                  # Imagens utilizadas no site
+│   └── style.css             # Estilos CSS principais
 │
 ├── .gitattributes            # Arquivo de configuração Git
 ├── README.md                 # Documentação do projeto
@@ -98,4 +99,3 @@ Projeto de **desenvolvimento front-end**, criado exclusivamente para fins acadê
 ---
 
 > ✨ Feito com dedicação para mostrar o poder da imaginação através da tecnologia!
-
