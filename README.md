@@ -10,7 +10,7 @@ O CineMagic Studios é uma produtora de conteúdo cinematográfico especializada
 
 ## Desktop
 
-![Telas](https://jmp.sh/s/sA5UVCwduBbieCSZ0nzQ)
+![Telas](https://makeagif.com/i/0cWwKn)
 
 ## Ferramentas Utilizadas
 
