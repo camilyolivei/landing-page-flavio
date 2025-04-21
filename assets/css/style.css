@@ -48,7 +48,7 @@
   /* Remove sublinhado de links e define cor branca como padrão */
   a {
     text-decoration: none;
-    color: white;
+    color: var(--cor-branco);
   }
   
   /*==================*/

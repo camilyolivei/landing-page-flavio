@@ -18,10 +18,7 @@
     align-items: center; /* Alinhando os itens verticalmente */
     justify-content: center; /* Centralizando os itens horizontalmente */
   }
-  
-  /* Título da seção "Experiência do Espectador" */
-  
-  
+
   /* Parágrafo descritivo dentro da seção */
   .experiencia-conteudo p {
     line-height: 1.7; /* Espaçamento entre as linhas do parágrafo */
