@@ -1,45 +1,103 @@
-# CineMagic Studios
+# 🎬 CineMagic Studios - Landing Page
 
-## Sobre o CineMagic Studios
+Bem-vindo à documentação oficial da **Landing Page da CineMagic Studios**, um projeto desenvolvido com foco em proporcionar uma experiência visual moderna e responsiva para uma produtora de conteúdo cinematográfico especializada em **realidade aumentada** e **experiências imersivas**.
 
-O CineMagic Studios é uma produtora de conteúdo cinematográfico especializada em realidade aumentada e experiências imersivas. Nosso foco é criar histórias interativas para empresas, eventos e educação, proporcionando uma nova dimensão de entretenimento e aprendizado.
+---
+![Telas](./assets/img/img-previa/previa.png)
 
-## Sobre este Projeto (Site Institucional)
 
-![Telas](https://a.imagem.app/BzPnGy.png)
+## 🌟 Sobre o Projeto
 
-## Ferramentas Utilizadas
+A **CineMagic Studios** é uma produtora de histórias interativas que atende empresas, eventos e projetos educacionais, oferecendo uma nova dimensão de entretenimento e aprendizado.  
 
-Este projeto foi desenvolvido utilizando as seguintes tecnologias web fundamentais:
+Este site foi desenvolvido como uma **landing page moderna**, destacando os principais serviços, equipe e visão da empresa.
 
-* **HTML:** Utilizado para a estruturação e organização do conteúdo do site.
-* **CSS:** Utilizado para a estilização visual, layout e design da interface do usuário.
-
-## Como Visualizar o Projeto
-
-Link do site = https://camilyolivei.github.io/landing-page-flavio/
-
-ou
-
-siga os seguintes passos:
-
-1.  Clone este repositório para o seu computador:
-    ```bash
-    git clone <URL_DO_REPOSITORIO>
-    ```
-2.  Navegue até a pasta do projeto:
-    ```bash
-    cd <NOME_DA_PASTA_DO_REPOSITORIO>
-    ```
-3.  Abra o arquivo `index.html` (ou arquivo principal do site) no seu navegador web preferido.
-
-## Autores
-
-- Camily Guilherme de Oliveira: Responsável pelo HTML, CSS e Design Gráfico
-- Karolline de Oliveira: Responsável pelo Design Gráfico e CSS
-- Erick Valentin: Responsável por revisar HTML
-- Gabriel da Silva Faria: Responsável por revisar CSS
+🔗 Acesse o site publicado:  
+👉 [https://camilyolivei.github.io/landing-page-flavio/](https://camilyolivei.github.io/landing-page-flavio/)
 
 ---
 
-**CineMagic Studios - Levando a imaginação a novas realidades.**
+## 🛠️ Tecnologias Utilizadas
+
+- **HTML5**  
+- **CSS3**  
+- **Responsividade com Media Queries**  
+- **Editor usado:** [Visual Studio Code](https://code.visualstudio.com/)  
+- **Design:** Customizado com foco em estética moderna e UX intuitivo
+
+---
+
+## 👩‍💻 Autores
+
+| Nome                          | Função                                                                 |
+|-------------------------------|------------------------------------------------------------------------|
+| **Camily Guilherme de Oliveira** | Responsável por grande parte do projeto: HTML, CSS e design gráfico    |
+| **Karolline de Oliveira**         | Apoio no design gráfico e contribuições no CSS                        |
+| **Erick Valentin**               | Responsável por revisar o código HTML                                 |
+| **Gabriel da Silva Faria**       | Responsável por revisar o código CSS                                  |
+
+---
+
+## 🧪 Como Testar o Projeto
+
+### ✅ Testar diretamente no navegador (mais fácil):
+
+1. Acesse o site diretamente pelo GitHub Pages:  
+   👉 [https://camilyolivei.github.io/landing-page-flavio/](https://camilyolivei.github.io/landing-page-flavio/)
+
+---
+
+### 🖥️ Testar localmente via Git:
+
+> Recomendado se quiser analisar o código, modificar ou visualizar offline.
+
+#### 1. **Clonar o repositório:**
+
+```bash
+git clone https://github.com/camilyolivei/landing-page-flavio.git
+```
+
+#### 2. **Navegar até a pasta do projeto:**
+
+```bash
+cd landing-page-flavio
+```
+
+#### 3. **Abrir o arquivo no navegador:**
+
+Você pode dar **duplo clique** no `index.html`, ou digitar:
+
+```bash
+start index.html   # Windows
+xdg-open index.html # Linux
+open index.html     # macOS
+```
+
+> Ou ainda, abra a pasta no VS Code e use a extensão *Live Server*.
+
+---
+
+## 📁 Estrutura do Projeto
+
+```
+landing-page-flavio/
+│
+├── assets/                   # Arquivos estáticos do projeto
+│   ├── img/                  # Imagens utilizadas no site
+│   └── style.css             # Estilos CSS principais
+│
+├── .gitattributes            # Arquivo de configuração Git
+├── README.md                 # Documentação do projeto
+├── enviar-formulario.html   # Página de envio do formulário
+├── index.html                # Página principal da landing page
+```
+
+---
+
+## 📄 Licença
+
+Projeto de **desenvolvimento front-end**, criado exclusivamente para fins acadêmicos e de portfólio.
+
+---
+
+> ✨ Feito com dedicação para mostrar o poder da imaginação através da tecnologia!
