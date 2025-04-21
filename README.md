@@ -3,6 +3,7 @@
 Bem-vindo à documentação oficial da **Landing Page da CineMagic Studios**, um projeto desenvolvido com foco em proporcionar uma experiência visual moderna e responsiva para uma produtora de conteúdo cinematográfico especializada em **realidade aumentada** e **experiências imersivas**.
 
 ---
+## Prévia do site
 ![Telas](./assets/img/img-previa/previa.png)
 
 
@@ -100,8 +101,4 @@ Projeto de **desenvolvimento front-end**, criado exclusivamente para fins acadê
 
 ---
 
-<<<<<<< HEAD
 > ✨ Feito com dedicação para mostrar o poder da imaginação através da tecnologia!
-=======
-> ✨ Feito com dedicação para mostrar o poder da imaginação através da tecnologia!
->>>>>>> fa79d42f5df71194a3e1bf4d551f1b2389d63774
