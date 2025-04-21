@@ -100,4 +100,8 @@ Projeto de **desenvolvimento front-end**, criado exclusivamente para fins acadê
 
 ---
 
+<<<<<<< HEAD
 > ✨ Feito com dedicação para mostrar o poder da imaginação através da tecnologia!
+=======
+> ✨ Feito com dedicação para mostrar o poder da imaginação através da tecnologia!
+>>>>>>> fa79d42f5df71194a3e1bf4d551f1b2389d63774
