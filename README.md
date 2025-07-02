@@ -32,10 +32,7 @@ Este site foi desenvolvido como uma **landing page moderna**, destacando os prin
 
 | Nome                          | Função                                                                 |
 |-------------------------------|------------------------------------------------------------------------|
-| **Camily Guilherme de Oliveira** | Responsável por grande parte do projeto: HTML, CSS e design gráfico    |
-| **Karolline de Oliveira**         | Apoio no design gráfico e contribuições no CSS                        |
-| **Erick Valentin**               | Responsável por revisar o código HTML                                 |
-| **Gabriel da Silva Faria**       | Responsável por revisar o código CSS                                  |
+| **Camily Guilherme de Oliveira** | Responsável pelo projeto: HTML, CSS e design gráfico    |
 
 ---
 
